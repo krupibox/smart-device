@@ -5,6 +5,20 @@
   line-height: $height;
 }
 
+@mixin roboto($size: 12px, $weight: 500, $height: 14px) {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+}
+
+@mixin roboto-cond($size: 24px, $weight: 400, $height: 34px) {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+}
+
 @mixin list-reset {
   margin: 0;
   padding: 0;

@@ -1,0 +1,74 @@
+.header {
+  display: flex;
+  width: 1408px;
+  margin: 0 auto;
+  padding-top: 13px;
+  outline: 1px solid blue;
+}
+
+.header__company {
+  margin-left: 13px;
+  color: $company;
+  @include roboto-cond(25px, 700, 29px);
+}
+
+.header__slogan {
+  display: block;
+  color: $slogan;
+  @include roboto();
+}
+
+.header__contacts-list {
+  display: flex;
+  margin-top: 34px;
+  margin-right: 49px;
+  margin-left: auto;
+  padding: 0;
+  list-style: none;
+}
+
+.header__contacts-item:first-child {
+  margin-right: 122px;
+}
+
+.header__contacts-link {
+  position: relative;
+  color: $white;
+  @include ptmono(16px, 400, 18px);
+}
+
+.header__contacts-link::before {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+}
+
+.header__contacts-link--email:before {
+  top: 2px;
+  left: -38px;
+  min-width: 19px;
+  min-height: 14px;
+  background-image: url("../../img/email.svg");
+}
+
+.header__contacts-link--phone:before {
+  top: 0;
+  left: -34px;
+  min-width: 18px;
+  min-height: 18px;
+  background-image: url("../../img/phone.svg");
+}
+
+.header__callback {
+  padding: 14px 26px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $white;
+  border: 1px solid $white;
+  border-radius: 5px;
+  flex-grow: 0;
+  align-self: center;
+  @include roboto-cond(14px, 700, 16px);
+}
