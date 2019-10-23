@@ -1,0 +1,12 @@
+@mixin ptmono($size: 16px, $weight: 400, $height: 22px) {
+  font-family: "PT Mono", "Times New Roman", serif;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
