@@ -10,6 +10,8 @@
   margin-left: 13px;
   color: $company;
   @include roboto-cond(25px, 700, 29px);
+  margin-right: 300px;
+  width: 135px;
 }
 
 .header__slogan {
@@ -21,14 +23,15 @@
 .header__contacts-list {
   display: flex;
   margin-top: 34px;
-  margin-right: 49px;
   margin-left: auto;
   padding: 0;
   list-style: none;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
-.header__contacts-item:first-child {
-  margin-right: 122px;
+.header__contacts-item:not(:first-child) {
+  margin-left: 122px;
 }
 
 .header__contacts-link {
@@ -71,4 +74,5 @@
   flex-grow: 0;
   align-self: center;
   @include roboto-cond(14px, 700, 16px);
+  margin-left: 50px;
 }
