@@ -16,15 +16,19 @@
 
 <body>
   <div class="wrapper">
-    <header class="header">
-      <img class="header__logo" src="./img/circuit.svg" alt="Логотип Smart Device" height="52" width="52">
-      <p class="header__company">Smart Device <span class="header__slogan">умные технологии</span></p>
-      <ul class="header__contacts-list">
-        <li class="header__contacts-item"><a class="header__contacts-link header__contacts-link--email" href="mailto:info@sd.ru">info@sd.ru</a></li>
-        <li class="header__contacts-item"><a class="header__contacts-link header__contacts-link--phone" href="tel:84950005252">+7 (495) 000 52 52</a></li>
-      </ul>
-      <a class="header__callback" href="#">Заказать звонок</a>
-    </header>
+    <div class="header-wrapper">
+      <header class="header">
+        <img class="header__logo" src="./img/circuit.svg" alt="Логотип Smart Device" height="52" width="52">
+        <p class="header__company">Smart Device <span class="header__slogan">умные технологии</span></p>
+        <div class="header__menu"></div>
+        <ul class="header__contacts-list">
+          <li class="header__contacts-item"><a class="header__contacts-link header__contacts-link--email" href="mailto:info@sd.ru"><span class="header__hide-element">info@sd.ru</span></a></li>
+          <li class="header__contacts-item"><a class="header__contacts-link header__contacts-link--phone" href="tel:84950005252"><span class="header__hide-element">+7 (495) 000 52 52</span></a></li>
+        </ul>
+        <a class="header__callback" href="#">Заказать звонок</a>
+      </header>
+
+    </div>
     <main class="main">
       <section class="welcome"></section>
     </main>
