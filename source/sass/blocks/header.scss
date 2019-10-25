@@ -1,8 +1,8 @@
 .header {
   display: flex;
-  // width: 1415px;
-  width: 73.69%;
-  max-width: 1415px;
+  // width: 1411px;
+  width: 73.48%;
+  max-width: 1411px;
   margin: 0 auto;
   padding-top: 33px;
   outline: 1px solid #fff;
@@ -111,13 +111,13 @@
   min-height: 14px;
   background-image: url("../../img/email.svg");
   @media (max-width: $tablet-width) {
-    top: 3px;
+    top: -12px;
     left: 0;
     min-width: 25px;
     min-height: 18px;
   }
   @media (max-width: $mobile-width) {
-    top: 3px;
+    top: -11px;
     left: 12px;
   }
 }
@@ -129,10 +129,13 @@
   min-height: 18px;
   background-image: url("../../img/phone.svg");
   @media (max-width: $tablet-width) {
-    top: 0;
+    top: -15px;
     left: 0;
     min-width: 24px;
     min-height: 24px;
+  }
+  @media (max-width: $mobile-width) {
+    top: -14px;
   }
 }
 
