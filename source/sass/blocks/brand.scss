@@ -1,6 +1,10 @@
 .brand {
   display: flex;
   align-items: center;
+
+  &--footer {
+    margin-top: 15px;
+  }
 }
 
 .brand__logo {
