@@ -1,5 +1,4 @@
 .brand {
-  outline: 1px solid red;
   display: flex;
   align-items: center;
 }
@@ -16,7 +15,6 @@
 
 .brand__name {
   min-width: 135px;
-  // margin-left: 16px;
   margin-top: 5px;
   margin-bottom: 3px;
   color: $white;
@@ -24,7 +22,6 @@
   @media (max-width: $tablet-width) {
     width: auto;
     margin-right: 0;
-    // margin-left: 16px;
   }
   @media (max-width: $mobile-width) {
     display: none;
