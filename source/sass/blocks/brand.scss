@@ -23,6 +23,11 @@
   margin-bottom: 3px;
   color: $white;
   @include roboto-cond(25px, 700, 29px);
+
+  &--footer {
+  color: $brand-name;
+  }
+
   @media (max-width: $tablet-width) {
     width: auto;
     margin-right: 0;
