@@ -1,3 +1,9 @@
 .main {
   min-height: 2871px;
+  @media (max-width: $tablet-width) {
+    // width: 720px;
+    // width: 70.38%;
+  min-height: 2904px;
+  background-color: yellow;
+  }
 }

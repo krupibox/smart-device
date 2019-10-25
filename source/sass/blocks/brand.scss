@@ -4,6 +4,9 @@
 
   &--footer {
     margin-top: 15px;
+    @media (max-width: $tablet-width) {
+    margin-top: 0;
+    }
   }
 }
 
@@ -26,6 +29,9 @@
 
   &--footer {
   color: $brand-name;
+  @media (max-width: $tablet-width) {
+  margin-top: 0;
+  }
   }
 
   @media (max-width: $tablet-width) {
