@@ -78,8 +78,9 @@
   min-height: 14px;
   background-image: url("../../img/email.svg");
   @media (max-width: $tablet-width) {
-    top: -12px;
+    top: 0;
     left: 0;
+    margin-top: 3px;
     min-width: 25px;
     min-height: 18px;
   }
@@ -96,10 +97,11 @@
   min-height: 18px;
   background-image: url("../../img/phone.svg");
   @media (max-width: $tablet-width) {
-    top: -15px;
+    top: 0;
     left: 0;
     min-width: 24px;
     min-height: 24px;
+    margin-top: 0;
   }
   @media (max-width: $mobile-width) {
     top: -14px;
