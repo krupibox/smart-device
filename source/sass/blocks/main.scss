@@ -1,9 +1,15 @@
 .main {
   min-height: 2871px;
+  outline: 2px solid red;
   @media (max-width: $tablet-width) {
     // width: 720px;
     // width: 70.38%;
-  min-height: 2904px;
+  min-height: 2904px;  // временно для сетки
+  }
+  @media (max-width: $mobile-width) {
+    // width: 720px;
+    // width: 70.38%;
+  min-height: 3537px; // временно для сетки
   background-color: yellow;
   }
 }

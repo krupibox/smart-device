@@ -13,6 +13,10 @@
     padding-top: 0;
     width: 770px;
   }
+  @media (max-width: $mobile-width) {
+    padding-top: 0;
+    width: 320px;
+  }
 }
 
 .footer__social {
@@ -26,6 +30,12 @@
     padding: 22px 26px 23px 24px;
     border-bottom: 1px solid $line;
   }
+  @media (max-width: $mobile-width) {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 48px;
+    border-bottom: 0;
+  }
 }
 
 .footer__info {
@@ -34,6 +44,9 @@
   @media (max-width: $tablet-width) {
     margin-top: 0;
     border-top: 0;
+  }
+  @media (max-width: $mobile-width) {
+    margin-top: 0;
   }
 }
 
@@ -47,11 +60,16 @@
   @media (max-width: $tablet-width) {
     margin-top: 10px;
     margin-right: 26px;
-  }
-  @media (max-width: $tablet-width) {
+
     & li:not(:first-child) {
       margin-left: 43px;
     }
+  }
+  @media (max-width: $mobile-width) {
+    margin-top: 79px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 24px;
   }
 
   & li a::before {
@@ -93,17 +111,35 @@
     margin-top: 22px;
     padding: 0 35px 0 25px;
   }
+  @media (max-width: $mobile-width) {
+    margin-top: 6px;
+    padding: 0;
+  }
 }
 
 .footer__block {
   &--menu {
     flex-grow: 1;
+    @media (max-width: $mobile-width) {
+      padding: 13px 0;
+      border-top: 1px solid $line;
+    }
+  }
+
+  &--office {
+    @media (max-width: $mobile-width) {
+      padding: 13px 0;
+      border-top: 1px solid $line;
+    }
   }
 }
 
 .footer__header {
   @include roboto-cond(15px, 400, 16px);
   text-transform: uppercase;
+  @media (max-width: $mobile-width) {
+    padding-left: 16px;
+  }
 }
 
 .footer__list {
@@ -113,12 +149,22 @@
   color: $dark;
   color: $nav;
   list-style: none;
+  @media (max-width: $mobile-width) {
+    padding-top: 7px;
+    padding-left: 15px;
+  }
 
   &--column {
     column-count: 2;
     column-gap: 40px;
     @media (max-width: $tablet-width) {
       column-count: auto;
+    }
+  }
+
+  &--hide {
+    @media (max-width: $mobile-width) {
+      display: none;
     }
   }
 
@@ -140,6 +186,15 @@
       width: 770px;
       border-top: 1px solid $line;
     }
+    @media (max-width: $mobile-width) {
+      flex-direction: column;
+      margin: 0;
+      padding-top: 28px;
+      padding-right: 0;
+      padding-left: 0;
+      width: auto;
+      text-align: center;
+    }
 
     & li:nth-child(2) {
       margin-left: 71px;
@@ -151,6 +206,12 @@
         margin-right: auto;
         margin-left: 43.6%;
         width: 240px;
+      }
+      @media (max-width: $mobile-width) {
+        // top: 111px;
+        margin-top: 102px;
+        margin-right: auto;
+        margin-left: auto;
       }
     }
 
@@ -195,5 +256,8 @@
   margin-left: auto;
   @media (max-width: $tablet-width) {
     margin-left: 0;
+  }
+  @media (max-width: $mobile-width) {
+    margin-top: 21px;
   }
 }
