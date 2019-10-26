@@ -4,10 +4,9 @@
 
   &--footer {
     margin-top: 15px;
+
     @media (max-width: $tablet-width) {
       margin-top: 0;
-    }
-    @media (max-width: $mobile-width) {
     }
   }
 }
@@ -16,6 +15,7 @@
   width: 52px;
   height: 52px;
   margin-right: 15px;
+
   @media (max-width: $mobile-width) {
     width: 38px;
     height: 38px;
@@ -34,31 +34,35 @@
   margin-top: 5px;
   margin-bottom: 3px;
   color: $white;
+
   @include roboto-cond(25px, 700, 29px);
 
   @media (max-width: $tablet-width) {
     width: auto;
     margin-right: 0;
   }
+
   @media (max-width: $mobile-width) {
     display: none;
   }
 
   &--footer {
     color: $brand-name;
+
     @media (max-width: $tablet-width) {
       margin-top: 0;
     }
+
     @media (max-width: $mobile-width) {
       display: block;
       margin-top: 5px;
     }
   }
-
 }
 
 .brand__slogan {
   display: block;
   color: $slogan;
+
   @include roboto();
 }

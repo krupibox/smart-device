@@ -4,16 +4,21 @@
 
 .footer__line {
   display: none;
+
   @media (max-width: $tablet-width) {
     position: relative;
     top: 106px;
+
     display: block;
+
     height: 1px;
     margin-top: -8px;
+
     color: $line;
     border: 0 none;
     background-color: $line;
   }
+
   @media (max-width: $mobile-width) {
     display: none;
   }
@@ -22,16 +27,19 @@
 .footer__inner {
   display: flex;
   flex-wrap: wrap;
+
   width: 73.48%;
   max-width: 1411px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 48px;
+
   @media (max-width: $tablet-width) {
     width: 70.38%;
-    padding-top: 0;
     min-width: 770px;
+    padding-top: 0;
   }
+
   @media (max-width: $mobile-width) {
     width: 41.55%;
     min-width: 320px;
@@ -42,8 +50,10 @@
 .footer__social {
   margin-right: 14.67%;
   margin-bottom: 40px;
+
   @media (max-width: $tablet-width) {
     display: flex;
+
     box-sizing: border-box;
     width: 100%;
     margin-right: auto;
@@ -52,9 +62,12 @@
     padding: 20px 26px 23px;
     justify-content: space-between;
   }
+
   @media (max-width: $mobile-width) {
     flex-wrap: wrap;
+
     padding-top: 48px;
+
     border-bottom: 0;
     justify-content: center;
   }
@@ -62,11 +75,15 @@
 
 .footer__info {
   margin-top: 45px;
+
   border-top: 1px solid $line;
+
   @media (max-width: $tablet-width) {
     margin-top: 23px;
+
     border-top: 1px solid $line;
   }
+
   @media (max-width: $mobile-width) {
     margin-top: 0;
   }
@@ -74,9 +91,11 @@
 
 .footer__social-links {
   display: flex;
+
   margin-top: 53px;
   margin-bottom: 0;
   padding: 0;
+
   list-style: none;
 
   @media (max-width: $tablet-width) {
@@ -87,6 +106,7 @@
       margin-left: 43px;
     }
   }
+
   @media (max-width: $mobile-width) {
     margin-top: 79px;
     margin-right: auto;
@@ -95,9 +115,12 @@
   }
 
   & li a::before {
-    display: block;
     position: absolute;
+
+    display: block;
+
     content: "";
+
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: contain;
@@ -106,18 +129,21 @@
   & li:first-child a::before {
     width: 27px;
     height: 27px;
+
     background-image: url("../../img/fb.svg");
   }
 
   & li:nth-child(2) a::before {
     width: 27px;
     height: 27px;
+
     background-image: url("../../img/ok.svg");
   }
 
   & li:last-child a::before {
     width: 27px;
     height: 27px;
+
     background-image: url("../../img/vk.svg");
   }
 
@@ -130,11 +156,13 @@
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
+
   @media (max-width: $tablet-width) {
     padding: 0 36px 0 25px;
   }
+
   @media (max-width: $mobile-width) {
-    margin-top: 12px;
+    margin-top: 35px;
     padding: 0;
   }
 }
@@ -143,9 +171,11 @@
   &--menu {
     margin-right: 6%;
     flex-grow: 1;
+
     @media (max-width: $mobile-width) {
       margin-right: 0;
       padding: 13px 0;
+
       border-top: 1px solid $line;
     }
   }
@@ -153,6 +183,7 @@
   &--office {
     @media (max-width: $mobile-width) {
       padding: 13px 0;
+
       border-top: 1px solid $line;
     }
   }
@@ -160,34 +191,44 @@
 
 .footer__header {
   position: relative;
-  @include roboto-cond(15px, 400, 16px);
+
   text-transform: uppercase;
+
+  @include roboto-cond(15px, 400, 16px);
+
   @media (max-width: $mobile-width) {
     padding-left: 16px;
 
-    &:after {
+    &::after {
       position: absolute;
+
       content: "";
+      cursor: pointer;
+
       background-repeat: no-repeat;
       background-position: bottom center;
       background-size: contain;
-      cursor: pointer;
     }
 
     &--close {
       &::after {
-        right: 0;
+        right: 17px;
+
         width: 16px;
         height: 16px;
+
         background-image: url("../../img/plus.svg");
       }
     }
 
     &--open {
       &::after {
-        right: 0;
+        top: 7px;
+        right: 17px;
+
         width: 16px;
         height: 2px;
+
         background-image: url("../../img/minus.svg");
       }
     }
@@ -198,17 +239,21 @@
   @include ptmono(15px, 400, 25px);
   margin-top: 24px;
   padding: 0;
+
   list-style: none;
+
   color: $nav;
+
   @media (max-width: $mobile-width) {
     padding-top: 7px;
-    padding-left: 15px;
     padding-right: 20px;
+    padding-left: 15px;
   }
 
   &--column {
     column-count: 2;
     column-gap: 2%;
+
     @media (max-width: $tablet-width) {
       column-count: auto;
     }
@@ -223,48 +268,58 @@
   &--info {
     @include ptmono(13px, 400, 24px);
     display: flex;
+
     width: 73.48%;
     max-width: 1411px;
     margin-top: 13px;
     margin-right: auto;
     margin-left: auto;
+
     letter-spacing: 0.05em;
     text-transform: uppercase;
     flex-grow: 1;
+
     @media (max-width: $tablet-width) {
       box-sizing: border-box;
       margin-top: 0;
       padding: 20px 17px;
       justify-content: space-between;
     }
+
     @media (max-width: $mobile-width) {
       flex-direction: column;
+
       padding-top: 28px;
       padding-right: 0;
       padding-left: 0;
+
       text-align: center;
     }
 
     & li:nth-child(2) {
       margin-left: 5.03%;
+
       @media (max-width: $tablet-width) {
         top: 30px;
         right: 0;
         bottom: 0;
-        left: 0;
-        width: 240px;
-        margin-right: auto;
-        margin-left: 44.5%;
-      }
-      @media (max-width: $mobile-width) {
-        margin-top: 94px;
+        left: 166px;
+
+        width: 280px;
         margin-right: auto;
         margin-left: auto;
+      }
+
+      @media (max-width: $mobile-width) {
+        left: 0;
+
+        margin-top: 94px;
       }
     }
 
     & li:nth-child(3) {
       margin-left: 9.85%;
+
       @media (max-width: $tablet-width) {
         margin-left: 0;
       }
@@ -294,7 +349,9 @@
     @include ptmono(13px, 400, 24px);
     position: absolute;
     top: 0;
+
     margin-top: 14px;
+
     letter-spacing: 0.05em;
     text-transform: uppercase;
   }
@@ -302,9 +359,11 @@
 
 .footer__developer {
   margin-left: auto;
+
   @media (max-width: $tablet-width) {
     margin-left: 0;
   }
+
   @media (max-width: $mobile-width) {
     margin-top: 21px;
   }
