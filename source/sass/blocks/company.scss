@@ -1,16 +1,15 @@
 .company {
   min-height: 793px;
+  max-width: 1411px;
+  margin-left: auto;
+  margin-right: auto;
   outline: 1px solid orange;
 
   @media (max-width: $tablet-width) {
-    // width: 720px;
-    // width: 70.38%;
     min-height: 613px; // временно для сетки
   }
 
   @media (max-width: $mobile-width) {
-    // width: 720px;
-    // width: 70.38%;
     min-height: 592px; // временно для сетки
   }
 }

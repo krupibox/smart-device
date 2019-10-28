@@ -1,27 +1,26 @@
 .header {
   display: flex;
-  // width: 1411px;
-  width: 73.48%;
-  max-width: 1411px;
   margin: 0 auto;
   padding-top: 33px;
   align-items: center;
+  max-width: 1411px;
+
   @media (max-width: $tablet-width) {
-    // width: 720px;
-    width: 70.38%;
-    margin: 0 auto;
     padding-top: 14px;
-    padding-right: 25px;
-    padding-left: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
+
   @media (max-width: $mobile-width) {
     box-sizing: border-box;
-    // width: 290px;
-    width: 41.72%;
     min-width: 320px;
     margin: 0 auto;
     padding: 4px 17px 0;
   }
+}
+
+.header__container {
+    background-color: $dark;
 }
 
 .header__menu {

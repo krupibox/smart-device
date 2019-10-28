@@ -1,27 +1,19 @@
 .brand {
   display: flex;
   align-items: center;
-
-  &--footer {
-    margin-top: 15px;
-
-    @media (max-width: $tablet-width) {
-      margin-top: 0;
-    }
-  }
 }
 
 .brand__logo {
   width: 52px;
   height: 52px;
-  margin-right: 15px;
+  margin-right: 13px;
 
   @media (max-width: $mobile-width) {
     width: 38px;
     height: 38px;
   }
 
-  &--footer {
+  &--color {
     @media (max-width: $tablet-width) {
       width: 52px;
       height: 52px;
