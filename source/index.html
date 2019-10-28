@@ -15,18 +15,29 @@
 </head>
 
 <body class="wrapper">
+  <div style="display: none">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
   <div class="header-wrapper">
     <header class="header">
-      <div class="brand">
+      <a class="brand">
         <img class="brand__logo" src="./img/circuit.svg" alt="Логотип Smart Device" height="52" width="52">
         <p class="brand__name">Smart Device <span class="brand__slogan">умные технологии</span></p>
-      </div>
+      </a>
       <nav class="header__menu" aria-label="Основное меню"></nav>
-      <ul class="header__contacts-list">
-        <li class="header__contacts-item"><a class="header__contacts-link header__contacts-link--email" href="mailto:info@sd.ru"><span class="header__hide-element">info@sd.ru</span></a></li>
-        <li class="header__contacts-item"><a class="header__contacts-link header__contacts-link--phone" href="tel:84950005252"><span class="header__hide-element">+7 (495) 000 52 52</span></a></li>
+      <ul class="contacts">
+        <li class="contacts__item"><a class="contacts__link contacts__link--email" href="mailto:info@sd.ru">
+            <svg width="19px" height="14px">
+              <use xlink:href="#icon-email"></use>
+            </svg>
+            <span class="contacts__hide">info@sd.ru</span></a></li>
+        <li class="contacts__item"><a class="contacts__link contacts__link--phone" href="tel:84950005252">
+            <svg width="18px" height="18px">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+            <span class="contacts__hide">+7 (495) 000 52 52</span></a></li>
       </ul>
-      <a class="header__callback" href="#">Заказать звонок</a>
+      <a class="button button--callback" href="#">Заказать звонок</a>
     </header>
     <section class="company"></section>
   </div>

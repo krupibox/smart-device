@@ -1,0 +1,25 @@
+.button {
+  width: 180px;
+  padding: 14px 0;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $white;
+  border: 1px solid $white;
+  border-radius: 5px;
+  @include roboto-cond(14px, 700, 16px);
+
+  &--callback {
+    margin-left: 3.5%;
+    text-transform: uppercase;
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--callback:focus,
+  &--callback:hover {
+    color: $white--50opacity;
+    border: 1px solid $white--50opacity;
+  }
+}
