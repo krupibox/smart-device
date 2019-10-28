@@ -6,7 +6,7 @@
   list-style: none;
   justify-content: flex-start;
   @media (max-width: $tablet-width) {
-      margin-top: 11px;
+    padding-top: 2px;
   }
 }
 
@@ -17,6 +17,10 @@
     margin-right: 88px;
     @media (max-width: $tablet-width) {
       margin-right: 34px;
+    }
+    @media (max-width: $mobile-width) {
+      margin-right: 21px;
+      padding-top: 2px;
     }
   }
 }
@@ -29,6 +33,10 @@
     @media (max-width: $tablet-width) {
       width: 24px;
       height: 24px;
+    }
+    @media (max-width: $mobile-width) {
+      width: 25.33px;
+      height: 18.67px;
     }
   }
 
