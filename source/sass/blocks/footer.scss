@@ -53,6 +53,12 @@
   }
 }
 
+.footer__header {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  @include roboto-cond(15px, 400, 16px);
+}
+
 .footer__list {
   @include ptmono(15px, 400, 25px);
   padding: 0;
@@ -74,6 +80,7 @@
 .footer__list--menu {
   column-count: 2;
   column-gap: 6%;
+
   @media (max-width: $tablet-width) {
     column-count: auto;
   }
@@ -84,19 +91,10 @@
   outline: 1px solid red;
   justify-content: space-start;
   padding: 0 13.17%;
+
   @include ptmono(13px, 400, 24px);
   letter-spacing: 0.05em;
   text-transform: uppercase;
-}
-
-.footer__developer {
-  margin-left: auto;
-}
-
-.footer__header {
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  @include roboto-cond(15px, 400, 16px);
 }
 
 .footer__info {
@@ -106,6 +104,7 @@
 
 .footer__info-years {
   margin-left: 5%;
+
   @media (max-width: $tablet-width) {
     @include ptmono(13px, 400, 24px);
     text-transform: uppercase;
@@ -114,4 +113,8 @@
 
 .footer__privacy-policy {
   margin-left: 10%;
+}
+
+.footer__developer {
+  margin-left: auto;
 }
