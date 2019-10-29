@@ -5,9 +5,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 50px;
+
   @media (max-width: $tablet-width) {
     padding-top: 7px;
   }
+
   @media (max-width: $mobile-width) {
     padding-top: 41px;
   }
@@ -15,9 +17,11 @@
 
 .footer__brand {
   margin-top: 6px;
+
   @media (max-width: $tablet-width) {
     margin-left: 2px;
   }
+
   @media (max-width: $mobile-width) {
     width: 100%;
   }
@@ -37,6 +41,7 @@
 .footer__social {
   padding-top: 10px;
   width: 30%;
+
   @media (max-width: $tablet-width) {
     width: 100%;
     display: flex;
@@ -44,6 +49,7 @@
     border-bottom: 1px solid $line;
     padding: 0 3% 16px;
   }
+
   @media (max-width: $mobile-width) {
     flex-direction: column;
     padding: 0 50px;
@@ -60,9 +66,11 @@
   padding: 0;
   list-style: none;
   margin-top: 53px;
+
   @media (max-width: $tablet-width) {
     margin-top: 25px;
   }
+
   @media (max-width: $mobile-width) {
     justify-content: center;
     margin-top: 82px;
@@ -90,10 +98,12 @@
   margin-left: auto;
   margin-right: auto;
   padding: 0 3%;
+
   @media (max-width: $tablet-width) {
     width: 100%;
     padding: 0;
   }
+
   @media (max-width: $mobile-width) {
     flex-direction: column;
   }
@@ -103,6 +113,7 @@
   @media (max-width: $tablet-width) {
     padding-top: 24px;
   }
+
   @media (max-width: $mobile-width) {
     display: flex;
     flex-direction: column;
@@ -112,12 +123,14 @@
   &--menu {
     margin-right: 3%;
     width: 43%;
+
     @media (max-width: $tablet-width) {
       width: auto;
       flex-grow: 1;
       margin-right: 0;
       padding-left: 3%;
     }
+
     @media (max-width: $mobile-width) {
       padding-top: 0;
       flex-grow: 0;
@@ -130,6 +143,7 @@
       padding-right: 3%;
       flex-grow: 0.1;
     }
+
     @media (max-width: $mobile-width) {
       padding-top: 0;
       padding-right: 0;
@@ -151,8 +165,10 @@
 .footer__header {
   text-transform: uppercase;
   letter-spacing: 0.05em;
+
   @include roboto-cond(15px, 400, 16px);
   color: $dark;
+
   @media (max-width: $mobile-width) {
     padding-top: 13px;
     padding-bottom: 13px;
@@ -188,9 +204,11 @@
   padding: 0;
   list-style: none;
   margin-top: 25px;
+
   @media (max-width: $tablet-width) {
     margin-top: 24px;
   }
+
   @media (max-width: $mobile-width) {
     margin-top: 0;
 
@@ -202,6 +220,7 @@
   &--menu {
     column-count: 2;
     column-gap: 0;
+
     @media (max-width: $tablet-width) {
       column-count: auto;
     }

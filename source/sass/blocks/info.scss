@@ -1,12 +1,15 @@
 .info {
   border-top: 1px solid $line;
   margin-top: 43px;
+
   @include ptmono(13px, 400, 24px);
   color: $nav;
+
   @media (max-width: $tablet-width) {
     margin-top: 22px;
     border-top: 1px solid $line;
   }
+
   @media (max-width: $mobile-width) {
     border-top: 0;
   }
@@ -19,14 +22,17 @@
   margin-left: auto;
   margin-right: auto;
   padding: 0 3%;
+
   @include ptmono(13px, 400, 24px);
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin-top: 14px;
+
   @media (max-width: $tablet-width) {
     padding: 0 3%;
     margin-top: 22px;
   }
+
   @media (max-width: $mobile-width) {
     display: flex;
     width: 220px;
@@ -38,6 +44,7 @@
 
 .info__years {
   margin-left: 5%;
+
   @media (max-width: $tablet-width) {
     position: absolute;
     width: 238px;
@@ -47,6 +54,7 @@
     margin-left: 42.5%;
     text-transform: uppercase;
   }
+
   @media (max-width: $mobile-width) {
     top: 125px;
     margin-left: auto;
@@ -56,6 +64,7 @@
 
 .info__privacy-policy {
   margin-left: 10%;
+
   @media (max-width: $tablet-width) {
     margin-left: 0;
   }
@@ -69,6 +78,7 @@
 
 .info__developer {
   margin-left: auto;
+
   @media (max-width: $mobile-width) {
     margin-left: 0;
     margin-top: 20px;

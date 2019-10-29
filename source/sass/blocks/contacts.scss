@@ -6,9 +6,11 @@
   list-style: none;
   justify-content: flex-end;
   width: 100%;
+
   @media (max-width: $tablet-width) {
     padding-top: 2px;
   }
+
   @media (max-width: $mobile-width) {
     flex-wrap: nowrap;
   }
@@ -25,14 +27,12 @@
 
   &:last-child {
     margin-left: 11.51%;
-
-    @media (max-width: $mobile-width) {
-    }
   }
 }
 
 .contacts__link {
   color: $white;
+
   @include ptmono(16px, 400, 18px);
 
   &--email svg {
@@ -40,6 +40,7 @@
       width: 24px;
       height: 24px;
     }
+
     @media (max-width: $mobile-width) {
       width: 25.33px;
       height: 18.67px;
@@ -57,9 +58,11 @@
 .contacts__link svg {
   fill: $light;
   margin-right: 8px;
+
   @media (max-width: $tablet-width) {
     margin-right: 0;
   }
+
   @media (max-width: $mobile-width) {
     margin-right: 0;
   }
@@ -79,6 +82,7 @@
   @media (max-width: $tablet-width) {
     fill: $white--50opacity;
   }
+
   @media (max-width: $mobile-width) {
     fill: $white--50opacity;
   }
