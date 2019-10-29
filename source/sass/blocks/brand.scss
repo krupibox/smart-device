@@ -7,11 +7,6 @@
   width: 52px;
   height: 52px;
   margin-right: 13px;
-
-  @media (max-width: $mobile-width) {
-    width: 38px;
-    height: 38px;
-  }
 }
 
 .brand__name {
@@ -21,10 +16,6 @@
   color: $white;
 
   @include roboto-cond(25px, 700, 29px);
-
-  &--color {
-    color: $brand-name;
-  }
 
   @media (max-width: $tablet-width) {
     width: auto;

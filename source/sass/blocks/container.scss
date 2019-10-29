@@ -6,4 +6,7 @@
   @media (max-width: $tablet-width) {
     padding: 0 1.94%;
   }
+  @media (max-width: $mobile-width) {
+    padding: 0 1%;
+  }
 }

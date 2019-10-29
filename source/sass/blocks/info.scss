@@ -1,20 +1,24 @@
 .info {
   border-top: 1px solid $line;
   margin-top: 43px;
-  max-width: 1411px;
-  margin-left: auto;
-  margin-right: auto;
   @include ptmono(13px, 400, 24px);
   color: $nav;
   @media (max-width: $tablet-width) {
     margin-top: 22px;
     border-top: 1px solid $line;
   }
+  @media (max-width: $mobile-width) {
+    border-top: 0;
+  }
 }
 
 .info__list {
   display: flex;
   justify-content: space-start;
+  max-width: 1411px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 3%;
   @include ptmono(13px, 400, 24px);
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -23,6 +27,13 @@
     padding: 0 3%;
     margin-top: 22px;
   }
+  @media (max-width: $mobile-width) {
+    display: flex;
+    width: 220px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 28px;
+  }
 }
 
 .info__years {
@@ -30,11 +41,16 @@
   @media (max-width: $tablet-width) {
     position: absolute;
     width: 238px;
-    top: 31px;
+    top: 37px;
     right: 0;
     left: 0;
     margin-left: 42.5%;
     text-transform: uppercase;
+  }
+  @media (max-width: $mobile-width) {
+    top: 125px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -53,4 +69,8 @@
 
 .info__developer {
   margin-left: auto;
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
