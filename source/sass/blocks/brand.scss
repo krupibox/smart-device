@@ -12,13 +12,6 @@
     width: 38px;
     height: 38px;
   }
-
-  &--color {
-    @media (max-width: $tablet-width) {
-      width: 52px;
-      height: 52px;
-    }
-  }
 }
 
 .brand__name {
@@ -32,23 +25,14 @@
   @media (max-width: $tablet-width) {
     width: auto;
     margin-right: 0;
+
+    &--color {
+      color: $brand-name;
+    }
   }
 
   @media (max-width: $mobile-width) {
     display: none;
-  }
-
-  &--footer {
-    color: $brand-name;
-
-    @media (max-width: $tablet-width) {
-      margin-top: 0;
-    }
-
-    @media (max-width: $mobile-width) {
-      display: block;
-      margin-top: 5px;
-    }
   }
 }
 
