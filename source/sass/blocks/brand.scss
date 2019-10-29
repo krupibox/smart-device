@@ -22,13 +22,13 @@
 
   @include roboto-cond(25px, 700, 29px);
 
+  &--color {
+    color: $brand-name;
+  }
+
   @media (max-width: $tablet-width) {
     width: auto;
     margin-right: 0;
-
-    &--color {
-      color: $brand-name;
-    }
   }
 
   @media (max-width: $mobile-width) {
