@@ -1,11 +1,11 @@
 .contacts {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   margin-left: auto;
   padding: 0;
   list-style: none;
   justify-content: flex-end;
-  width: 100%;
 
   @media (max-width: $tablet-width) {
     padding-top: 2px;
@@ -27,8 +27,13 @@
 
   &:last-child {
     margin-left: 11.51%;
+
     @media (max-width: $tablet-width) {
-    margin-left: 8.51%;
+      margin-left: 8.51%;
+    }
+
+    @media (max-width: $mobile-width) {
+      margin-left: 12.51%;
     }
   }
 }
@@ -59,8 +64,8 @@
 }
 
 .contacts__link svg {
-  fill: $light;
   margin-right: 8px;
+  fill: $light;
 
   @media (max-width: $tablet-width) {
     margin-right: 0;

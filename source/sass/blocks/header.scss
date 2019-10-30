@@ -1,15 +1,14 @@
 .header {
   display: flex;
+  max-width: 1411px;
   margin: 0 auto;
   padding-top: 29px;
   align-items: center;
-  max-width: 1411px;
-  outline: 1px solid red !important;
 
   @media (max-width: $tablet-width) {
     padding-top: 14px;
-    padding-left: 10px;
     padding-right: 10px;
+    padding-left: 10px;
   }
 
   @media (max-width: $mobile-width) {
@@ -17,50 +16,47 @@
     min-width: 320px;
     margin: 0 auto;
     padding-top: 4px;
-    padding-left: 15px;
     padding-right: 19px;
+    padding-left: 15px;
   }
 }
 
 .header__container {
-
   background-color: $dark;
-  background-image:
-  url("../../img/background-desktop@1x.png"),
-  url("../../img/triangles-desktop.svg"),
-  url("../../img/boards-desktop@1x.png");
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image:
-    url("../../img/background-desktop@2x.png"),
-    url("../../img/triangles-desktop.svg"),
-    url("../../img/boards-desktop@2x.png");
-  }
-
+  background-image: url("../../img/background-desktop@1x.png"), url("../../img/triangles-desktop.svg"), url("../../img/boards-desktop@1x.png");
   background-repeat: no-repeat;
   background-position: center center, 80% bottom, 85% 70%;
   background-size: cover, cover, auto 515px;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/background-desktop@2x.png"), url("../../img/triangles-desktop.svg"), url("../../img/boards-desktop@2x.png");
+  }
+
   @media (max-width: $tablet-width) {
-    background-image:
-    url("../../img/background-tablet@1x.png"),
-    url("../../img/triangles-desktop.svg"),
-    url("../../img/boards-tablet@1x.png");
+    background-image: url("../../img/background-tablet@1x.png"), url("../../img/triangles-tablet.svg"), url("../../img/boards-tablet@1x.png");
   }
 
   @media (max-width: $tablet-width) and (min-resolution: $retina-dpi), (max-width: $tablet-width) and (min-resolution: $retina-dppx) {
-    background-image:
-    url("../../img/background-tablet@2x.png"),
-    url("../../img/triangles-table.svg"),
-    url("../../img/boards-tablet@2x.png");
-}
+    background-image: url("../../img/background-tablet@2x.png"), url("../../img/triangles-tablet.svg"), url("../../img/boards-tablet@2x.png");
+  }
 
-@media (max-width: $tablet-width) {
-  background-position: center center, right top, right 30%;
-  background-size: cover, auto 70%, auto 50%;
-}
+  @media (max-width: $tablet-width) {
+    background-position: center center, right bottom, right 25%;
+    background-size: cover, auto 80%, auto 42%;
+  }
 
+  @media (max-width: $mobile-width) {
+    background-image: url("../../img/background-mobile@1x.png"), url("../../img/triangles-tablet.svg"), url("../../img/boards-mobile@1x.png");
+  }
 
+  @media (max-width: $mobile-width) and (min-resolution: $retina-dpi), (max-width: $mobile-width) and (min-resolution: $retina-dppx) {
+    background-image: url("../../img/background-mobile@2x.png"), url("../../img/triangles-tablet.svg"), url("../../img/boards-mobile@2x.png");
+  }
+
+  @media (max-width: $mobile-width) {
+    background-position: center center, 65% top, 88% 22%;
+    background-size: cover, auto 82%, auto 34%;
+  }
 }
 
 .header__menu {

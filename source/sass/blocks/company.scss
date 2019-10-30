@@ -1,84 +1,126 @@
 .company {
-  // min-height: 793px;
   max-width: 1411px;
-  margin-left: auto;
   margin-right: auto;
-  outline: 1px solid orange;
+  margin-left: auto;
   padding-top: 170px;
   padding-bottom: 276px;
+
   @media (max-width: $tablet-width) {
     padding-top: 61px;
+    padding-bottom: 164px;
     padding-left: 73px;
-    // padding-bottom: 276px;
   }
+
   @media (max-width: $mobile-width) {
-    min-height: 592px; // временно для сетки
+    min-width: 320px;
+    padding-top: 185px;
+    padding-bottom: 72px;
+    padding-left: 15px;
   }
 }
 
 .company h1 {
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
   margin-bottom: 33px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $white;
+
   @include roboto-cond(80px, 700, 80px);
-  // color: $white;
-  color: red;
+
   @media (max-width: $tablet-width) {
     @include roboto-cond(60px, 700, 70px);
     width: 470px;
-    margin-left: 0;
     margin-bottom: 27px;
+    margin-left: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 280px;
+    margin-bottom: 27px;
+    margin-left: 0;
+
+    @include roboto-cond(40px, 700, 47px);
   }
 }
 
 .company p {
   position: relative;
-  @include ptmono(22px, 400, 34px);
-  // color: $white;
-  color: red;
-  padding-left: 92px;
   width: 620px;
-  outline: 1px solid red;
+  padding-left: 92px;
+  color: $white;
+
+  @include ptmono(22px, 400, 34px);
+
   @media (max-width: $tablet-width) {
     width: 360px;
-    @include ptmono(18px, 400, 30px);
     padding-left: 51px;
+
+    @include ptmono(18px, 400, 30px);
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 245px;
+    padding-left: 51px;
+
+    @include ptmono(16px, 400, 25px);
   }
 
   &::before {
     position: absolute;
-    content: "";
+    top: 17px;
+    left: 0;
     width: 66px;
     height: 2px;
+    content: "";
     background-color: $white;
-    left: 0;
-    top: 17px;
+
     @media (max-width: $tablet-width) {
-      width: 33px;
       left: 3px;
+      width: 33px;
     }
   }
 }
 
 .company__button {
   display: block;
-  background-color: $light;
-  padding: 17px 0;
   width: 407px;
-  border-radius: 5px;
-  margin-left: 92px;
   margin-top: 45px;
-  @include roboto-cond(16px, 700, 19px);
-  text-transform: uppercase;
+  margin-left: 92px;
+  padding: 17px 0;
   text-align: center;
   letter-spacing: 0.05em;
-  // color: $white;
-  color: red;
+  text-transform: uppercase;
+  color: $white;
+  border-radius: 5px;
+  background-color: $light;
+
+  @include roboto-cond(16px, 700, 19px);
+
   @media (max-width: $tablet-width) {
     @include roboto-cond(16px, 700, 19px);
-    margin-top: 53px;
     width: 379px;
-    // padding: 17px 0;
+    margin-top: 53px;
     margin-left: 50px;
+  }
+
+  @media (max-width: $mobile-width) {
+    @include roboto-cond(16px, 700, 19px);
+    width: 287px;
+    margin-top: 40px;
+    margin-left: 0;
+  }
+}
+
+.company__button-long {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.company__button-short {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
   }
 }
