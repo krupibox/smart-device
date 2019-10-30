@@ -1,7 +1,6 @@
 .advantages {
   display: flex;
   flex-wrap: wrap;
-
   max-width: 1170px;
   margin-right: auto;
   margin-left: auto;
@@ -9,17 +8,19 @@
   justify-content: space-between;
 
   @media (max-width: $tablet-width) {
-    max-width: 720px;
+    width: 93.50%;
     padding-top: 54px;
+    align-items: center;
+  }
 
-    & div:nth-last-of-type(1),
-    & div:nth-last-of-type(2) {
-      min-height: 232px;
-    }
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    width: 64.62%;
+    padding-top: 37px;
   }
 }
 
-.advantages div {
+.advantages__block {
   box-sizing: border-box;
   width: 48.71%;
   min-height: 299px;
@@ -27,9 +28,7 @@
   padding-top: 38px;
   padding-right: 40px;
   padding-left: 40px;
-
   cursor: pointer;
-
   border: 1px solid $border;
   border-left: 3px solid $light;
 
@@ -41,21 +40,17 @@
     padding-left: 24px;
   }
 
-  & svg {
-    fill: $light;
+  @media (max-width: $mobile-width) {
+    width: 90.62%;
+    min-height: 310px;
+    margin-bottom: 20px;
+    padding-top: 24px;
+    padding-right: 20px;
+    padding-left: 24px;
   }
 
-  &:hover {
-    background-color: $light;
-
-    h3,
-    p {
-      color: $white;
-    }
-
-    svg {
-      fill: $white;
-    }
+  & svg {
+    fill: $light;
   }
 }
 
@@ -69,6 +64,19 @@
     margin-top: 0;
     margin-bottom: 10px;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 4px;
+    margin-bottom: 6px;
+
+    @include roboto-cond(20px, 400, 34px);
+  }
+}
+
+.advantages div:nth-of-type(3) h3 {
+  @media (max-width: $mobile-width) {
+    @include roboto-cond(20px, 400, 28px);
+  }
 }
 
 .advantages p {
@@ -77,5 +85,53 @@
 
   @media (max-width: $tablet-width) {
     margin-top: 0;
+  }
+}
+
+.advantages__block--hired {
+  @media (max-width: $mobile-width) {
+    min-height: 310px;
+    padding-right: 11px;
+
+    & svg {
+      width: 31.61px;
+      height: 32.18px;
+    }
+
+    & h3 {
+      margin-top: 7px;
+    }
+  }
+}
+
+.advantages__block--detective,
+.advantages__block--tag {
+  @media (max-width: $tablet-width) {
+    min-height: 232px;
+  }
+}
+
+.advantages__block--detective {
+  @media (max-width: $mobile-width) {
+    min-height: 232px;
+  }
+}
+
+.advantages__block--tag {
+  @media (max-width: $mobile-width) {
+    min-height: 244px;
+  }
+}
+
+.advantages__block:hover {
+  background-color: $light;
+
+  h3,
+  p {
+    color: $white;
+  }
+
+  svg {
+    fill: $white;
   }
 }
