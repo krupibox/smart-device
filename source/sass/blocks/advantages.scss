@@ -1,0 +1,30 @@
+.advantages {
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 114px;
+justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages div {
+  border: 1px solid $border;
+  width: 484px;
+  border-left: 3px solid $light;
+  padding-top: 70px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 40px;
+}
+
+.advantages h3 {
+    @include roboto-cond(24px, 400, 34px);
+    color: $light;
+    margin-bottom: 15px;
+}
+
+.advantages p {
+    @include ptmono(16px, 400, 22px);
+    color: $grey;
+}

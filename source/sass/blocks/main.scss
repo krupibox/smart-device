@@ -1,12 +1,13 @@
 .main {
-  min-height: 2866px;
-  outline: 1px solid red;
+  max-width: 1411px;
+  margin-right: auto;
+  margin-left: auto;
 
   @media (max-width: $tablet-width) {
-    min-height: 2898px;  // временно для сетки
+    // min-height: 2898px;  // временно для сетки
   }
 
   @media (max-width: $mobile-width) {
-    min-height: 3523px; // временно для сетки
+    // min-height: 3523px; // временно для сетки
   }
 }
