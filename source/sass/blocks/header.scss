@@ -1,9 +1,10 @@
 .header {
   display: flex;
   margin: 0 auto;
-  padding-top: 33px;
+  padding-top: 29px;
   align-items: center;
   max-width: 1411px;
+  outline: 1px solid red !important;
 
   @media (max-width: $tablet-width) {
     padding-top: 14px;
@@ -22,7 +23,23 @@
 }
 
 .header__container {
+
   background-color: $dark;
+  background-image:
+  url("../../img/background-desktop@1x.png"),
+  url("../../img/triangles.svg"),
+  url("../../img/boards-desktop@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image:
+    url("../../img/background-desktop@2x.png"),
+    url("../../img/triangles.svg"),
+    url("../../img/boards-desktop@2x.png");
+  }
+
+  background-repeat: no-repeat;
+  background-position: center center, 80% bottom, 85% 70%;
+  background-size: cover, cover, auto 515px;
 }
 
 .header__menu {

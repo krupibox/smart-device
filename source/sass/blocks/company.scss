@@ -1,9 +1,11 @@
 .company {
-  min-height: 793px;
+  // min-height: 793px;
   max-width: 1411px;
   margin-left: auto;
   margin-right: auto;
   outline: 1px solid orange;
+  padding-top: 170px;
+  padding-bottom: 276px;
 
   @media (max-width: $tablet-width) {
     min-height: 613px; // временно для сетки
@@ -12,4 +14,47 @@
   @media (max-width: $mobile-width) {
     min-height: 592px; // временно для сетки
   }
+}
+
+.company h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 33px;
+
+  @include roboto-cond(80px, 700, 80px);
+  color: $white;
+}
+
+.company p {
+    position: relative;
+    @include ptmono(22px, 400, 34px);
+    color: $white;
+    padding-left: 92px;
+    width: 620px;
+    outline: 1px solid red;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 66px;
+      height: 2px;
+      background-color: $white;
+      left: 0;
+      top: 17px;
+    }
+}
+
+.company__button {
+  display: block;
+  background-color: $light;
+  padding: 17px 0;
+  width: 407px;
+  border-radius: 5px;
+  margin-left: 92px;
+  margin-top: 45px;
+  @include roboto-cond(16px, 700, 19px);
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: $white;
 }
