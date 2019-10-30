@@ -27,19 +27,40 @@
   background-color: $dark;
   background-image:
   url("../../img/background-desktop@1x.png"),
-  url("../../img/triangles.svg"),
+  url("../../img/triangles-desktop.svg"),
   url("../../img/boards-desktop@1x.png");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image:
     url("../../img/background-desktop@2x.png"),
-    url("../../img/triangles.svg"),
+    url("../../img/triangles-desktop.svg"),
     url("../../img/boards-desktop@2x.png");
   }
 
   background-repeat: no-repeat;
   background-position: center center, 80% bottom, 85% 70%;
   background-size: cover, cover, auto 515px;
+
+  @media (max-width: $tablet-width) {
+    background-image:
+    url("../../img/background-tablet@1x.png"),
+    url("../../img/triangles-desktop.svg"),
+    url("../../img/boards-tablet@1x.png");
+  }
+
+  @media (max-width: $tablet-width) and (min-resolution: $retina-dpi), (max-width: $tablet-width) and (min-resolution: $retina-dppx) {
+    background-image:
+    url("../../img/background-tablet@2x.png"),
+    url("../../img/triangles-table.svg"),
+    url("../../img/boards-tablet@2x.png");
+}
+
+@media (max-width: $tablet-width) {
+  background-position: center center, right top, right 30%;
+  background-size: cover, auto 70%, auto 50%;
+}
+
+
 }
 
 .header__menu {

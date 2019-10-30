@@ -27,6 +27,9 @@
 
   &:last-child {
     margin-left: 11.51%;
+    @media (max-width: $tablet-width) {
+    margin-left: 8.51%;
+    }
   }
 }
 

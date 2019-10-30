@@ -6,11 +6,11 @@
   outline: 1px solid orange;
   padding-top: 170px;
   padding-bottom: 276px;
-
   @media (max-width: $tablet-width) {
-    min-height: 613px; // временно для сетки
+    padding-top: 61px;
+    padding-left: 73px;
+    // padding-bottom: 276px;
   }
-
   @media (max-width: $mobile-width) {
     min-height: 592px; // временно для сетки
   }
@@ -20,28 +20,44 @@
   text-transform: uppercase;
   letter-spacing: 0.07em;
   margin-bottom: 33px;
-
   @include roboto-cond(80px, 700, 80px);
-  color: $white;
+  // color: $white;
+  color: red;
+  @media (max-width: $tablet-width) {
+    @include roboto-cond(60px, 700, 70px);
+    width: 470px;
+    margin-left: 0;
+    margin-bottom: 27px;
+  }
 }
 
 .company p {
-    position: relative;
-    @include ptmono(22px, 400, 34px);
-    color: $white;
-    padding-left: 92px;
-    width: 620px;
-    outline: 1px solid red;
+  position: relative;
+  @include ptmono(22px, 400, 34px);
+  // color: $white;
+  color: red;
+  padding-left: 92px;
+  width: 620px;
+  outline: 1px solid red;
+  @media (max-width: $tablet-width) {
+    width: 360px;
+    @include ptmono(18px, 400, 30px);
+    padding-left: 51px;
+  }
 
-    &::before {
-      position: absolute;
-      content: "";
-      width: 66px;
-      height: 2px;
-      background-color: $white;
-      left: 0;
-      top: 17px;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 66px;
+    height: 2px;
+    background-color: $white;
+    left: 0;
+    top: 17px;
+    @media (max-width: $tablet-width) {
+      width: 33px;
+      left: 3px;
     }
+  }
 }
 
 .company__button {
@@ -56,5 +72,13 @@
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.05em;
-  color: $white;
+  // color: $white;
+  color: red;
+  @media (max-width: $tablet-width) {
+    @include roboto-cond(16px, 700, 19px);
+    margin-top: 53px;
+    width: 379px;
+    // padding: 17px 0;
+    margin-left: 50px;
+  }
 }
