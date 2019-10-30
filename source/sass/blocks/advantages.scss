@@ -1,24 +1,45 @@
 .advantages {
   display: flex;
   flex-wrap: wrap;
+
   max-width: 1170px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 114px;
   justify-content: space-between;
+
+  @media (max-width: $tablet-width) {
+    max-width: 720px;
+    padding-top: 54px;
+
+    & div:nth-last-of-type(1),
+    & div:nth-last-of-type(2) {
+      min-height: 232px;
+    }
+  }
 }
 
 .advantages div {
   box-sizing: border-box;
-  width: 570px;
+  width: 48.71%;
   min-height: 299px;
   margin-bottom: 30px;
   padding-top: 38px;
   padding-right: 40px;
   padding-left: 40px;
+
   cursor: pointer;
+
   border: 1px solid $border;
   border-left: 3px solid $light;
+
+  @media (max-width: $tablet-width) {
+    width: 47.91%;
+    min-height: 306px;
+    padding-top: 24px;
+    padding-right: 20px;
+    padding-left: 24px;
+  }
 
   & svg {
     fill: $light;
@@ -43,9 +64,18 @@
   margin-top: 15px;
   margin-bottom: 15px;
   color: $light;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
 }
 
 .advantages p {
   @include ptmono(16px, 400, 22px);
   color: $grey;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
