@@ -1,0 +1,19 @@
+.about-us {
+  display: flex;
+}
+
+.about-us h2 {
+    @include roboto-cond(36px, 400, 51px);
+    color: $grey;
+}
+
+.about-us div p {
+    @include ptmono(16px, 400, 22px);
+    color: $grey;
+}
+
+.about-us__button {
+  color: $light;
+  border: 1px solid $light;
+  width: 180px;
+}
