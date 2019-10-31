@@ -25,7 +25,7 @@
   }
 }
 
-.advantages__block {
+.advantages__item {
   box-sizing: border-box;
   width: 48.71%;
   min-height: 299px;
@@ -50,8 +50,6 @@
     min-height: 310px;
     margin-bottom: 20px;
     padding-top: 24px;
-    padding-right: 20px;
-    padding-left: 24px;
   }
 
   & svg {
@@ -93,7 +91,7 @@
   }
 }
 
-.advantages__block--hired {
+.advantages__item--hired {
   @media (max-width: $mobile-width) {
     min-height: 310px;
     padding-right: 11px;
@@ -109,26 +107,26 @@
   }
 }
 
-.advantages__block--detective,
-.advantages__block--tag {
+.advantages__item--detective,
+.advantages__item--tag {
   @media (max-width: $tablet-width) {
     min-height: 232px;
   }
 }
 
-.advantages__block--detective {
+.advantages__item--detective {
   @media (max-width: $mobile-width) {
     min-height: 232px;
   }
 }
 
-.advantages__block--tag {
+.advantages__item--tag {
   @media (max-width: $mobile-width) {
     min-height: 244px;
   }
 }
 
-.advantages__block:hover {
+.advantages__item:hover {
   background-color: $light;
 
   h3,
