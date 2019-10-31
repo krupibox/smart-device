@@ -1,0 +1,20 @@
+.pixel-perfect {
+      background-image: url("../../img/media/smart-device-desktop.jpg");
+      background-repeat: no-repeat;
+      background-position: center top;
+      opacity: 0.5;
+
+    @media (max-width: $tablet-width) {
+      background-image: url("../../img/media/smart-device-tablet.jpg");
+      background-repeat: no-repeat;
+      background-position: center top;
+      opacity: 0.5;
+    }
+
+    @media (max-width: $mobile-width) {
+      background-image: url("../../img/media/smart-device-mobile.jpg");
+      background-repeat: no-repeat;
+      background-position: center top;
+      opacity: 0.5;
+    }
+  }
