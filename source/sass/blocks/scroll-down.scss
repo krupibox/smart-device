@@ -1,0 +1,25 @@
+.scroll-down {
+  position: absolute;
+  bottom: 125px;
+  left: -40px;
+  display: block;
+  transform: rotate(-90deg);
+
+  @include ptmono(14px, 400, 16px);
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.scroll-down,
+.scroll-down:link,
+.scroll-down:visited {
+  opacity: 0.5;
+  color: $white;
+}
+
+.scroll-down:focus,
+.scroll-down:hover {
+  opacity: 1;
+}
