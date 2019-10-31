@@ -92,18 +92,32 @@
       </li>
     </ul>
     <section class="about-us">
-      <h2 class="visually-hidden">О компании</h2>
-      <img src="./img/2005-desktop@1x.png"
-      srcset="./img/2005-desktop@1x.png 220w,
-              ./img/2005-tablet@1x.png 244w,
-              ./img/2005-desktop@2x.png 2x,
-              ./img/2005-tablet@2x.png 2x"
-              sizes="(max-width: 1023px) 244px"
-              width="220" height="317"
-              alt="2005">
+      <h2>О компании</h2>
+      <div>
+        <picture>
+          <!-- 1х: 244px; 2x: 487px -->
+          <source srcset="./img/2005-tablet@1x.png 1x, ./img/2005-tablet@2x.png 2x" media="(max-width: 1023px)">
+          <!-- 1х: 220px; 2x: 440px -->
+          <img src="./img/2005-desktop@1x.png" srcset="./img/2005-desktop@2x.png 2x" alt="2005">
+        </picture>
+      </div>
+      <div>
+        <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года.
+          Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+        <p>Наши поставщики - мировые производители электронных компонентов:
+          OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices
+          применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ),
+          МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+      </div>
+      <a class="button about-us__button" href="#">Заказать звонок</a>
     </section>
     <section class="service">
-      <h2 class="visually-hidden">Товары и услуги</h2>
+      <h2>Service Device предлагает следующие товары и услуги</h2>
+      <ul>
+        <li>Производство печатных плат</li>
+        <li>Монтаж печатных плат</li>
+        <li>Комплектующие для светотехники</li>
+      </ul>
     </section>
     <form class="questions">
       <h2 class="visually-hidden">Задать вопрос</h2>
