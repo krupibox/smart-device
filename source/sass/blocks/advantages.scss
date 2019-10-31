@@ -1,22 +1,27 @@
 .advantages {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1170px;
+  max-width: 1220px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 114px;
+  padding-top: 97px;
+  padding-left: 25px;
+  padding-right: 25px;
   justify-content: space-between;
+  list-style: none;
 
   @media (max-width: $tablet-width) {
-    width: 93.50%;
-    padding-top: 54px;
+    // width: 93.50%;
+    padding-top: 39px;
     align-items: center;
   }
 
   @media (max-width: $mobile-width) {
     flex-direction: column;
     width: 100%;
-    padding-top: 37px;
+    padding-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -73,7 +78,7 @@
   }
 }
 
-.advantages div:nth-of-type(3) h3 {
+.advantages li:nth-of-type(3) h3 {
   @media (max-width: $mobile-width) {
     @include roboto-cond(20px, 400, 28px);
   }
