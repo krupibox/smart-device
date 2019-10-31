@@ -4,7 +4,7 @@
       background-position: center top;
       opacity: 0.5;
 
-    @media (max-width: $tablet-width) {
+    @media (min-width: $mobile-width) and (max-width: $tablet-width) {
       background-image: url("../../img/media/smart-device-tablet.jpg");
       background-repeat: no-repeat;
       background-position: center top;

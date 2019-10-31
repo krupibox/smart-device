@@ -59,7 +59,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    width: 245px;
+    width: 273px;
     padding-left: 51px;
 
     @include ptmono(16px, 400, 25px);
@@ -93,6 +93,7 @@
   color: $white;
   border-radius: 5px;
   background-color: $light;
+  cursor: pointer;
 
   @include roboto-cond(16px, 700, 19px);
 
@@ -123,4 +124,8 @@
   @media (max-width: $mobile-width) {
     display: block;
   }
+}
+
+.company__button:hover {
+  opacity: 0.5;
 }
