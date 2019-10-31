@@ -1,0 +1,10 @@
+.service {
+  margin-top: 101px;
+  min-height: 938px;
+  background-color: $dark;
+  color: $white;
+}
+
+.service h2 {
+  @include roboto-cond(36px, 400, 51px);
+}

@@ -84,17 +84,17 @@
 
 .contacts__link span:focus,
 .contacts__link span:hover {
-  color: $white--50opacity;
+  color: $grey;
 }
 
 .contacts__link svg:focus,
 .contacts__link svg:hover {
   @media (max-width: $tablet-width) {
-    fill: $white--50opacity;
+    fill: $grey;
   }
 
   @media (max-width: $mobile-width) {
-    fill: $white--50opacity;
+    fill: $grey;
   }
 }
 

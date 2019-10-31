@@ -19,10 +19,10 @@
       display: none;
     }
   }
+}
 
-  &--callback:focus,
-  &--callback:hover {
-    color: $white--50opacity;
-    border: 1px solid $white--50opacity;
-  }
+.button:focus,
+.button:hover {
+  color: $grey;
+  border: 1px solid $grey;
 }
