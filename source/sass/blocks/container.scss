@@ -1,11 +1,4 @@
 .container {
   max-width: 100%;
   margin: 0 auto;
-
-  @media (max-width: $tablet-width) {
-  }
-
-  @media (max-width: $mobile-width) {
-    // width: 320px; // временно для верстки
-  }
 }

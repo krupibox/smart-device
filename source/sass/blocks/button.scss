@@ -10,8 +10,8 @@
   @include roboto-cond(14px, 700, 16px);
 
   &--callback {
-    min-width: 177px;
-    margin-left: 3.7%;
+    min-width: 181px;
+    margin-left: 3.5%;
     text-transform: uppercase;
 
     @media (max-width: $tablet-width) {

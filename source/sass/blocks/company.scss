@@ -7,9 +7,9 @@
   padding-bottom: 276px;
 
   @media (max-width: $tablet-width) {
-    padding-top: 61px;
+    padding-top: 59px;
     padding-bottom: 164px;
-    padding-left: 73px;
+    padding-left: 63px;
   }
 
   @media (max-width: $mobile-width) {
@@ -107,7 +107,7 @@
 
   @media (max-width: $mobile-width) {
     @include roboto-cond(16px, 700, 19px);
-    width: 287px;
+    width: 290px;
     margin-top: 40px;
     margin-left: 0;
   }

@@ -2,13 +2,13 @@
   display: flex;
   max-width: 1411px;
   margin: 0 auto;
-  padding-top: 29px;
+  padding-top: 31px;
   align-items: center;
 
   @media (max-width: $tablet-width) {
     padding-top: 14px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   @media (max-width: $mobile-width) {
@@ -22,6 +22,9 @@
 }
 
 .header__container {
+  padding-left: 25px;
+  padding-right: 25px;
+
   background-color: $dark;
   background-image: url("../../img/background-desktop@1x.png"), url("../../img/triangles-desktop.svg"), url("../../img/boards-desktop@1x.png");
   background-repeat: no-repeat;
@@ -41,8 +44,8 @@
   }
 
   @media (max-width: $tablet-width) {
-    background-position: center top, right top, right 25%;
-    background-size: cover, auto 82%, auto 42%;
+    background-position: center top, right top, right 33%;
+    background-size: cover, auto 82%, auto 50%;
   }
 
   @media (max-width: $mobile-width) {
@@ -54,6 +57,8 @@
   }
 
   @media (max-width: $mobile-width) {
+    padding-left: 0;
+    padding-right: 0;
     background-position: center top, 65% top, 88% 22%;
     background-size: cover, auto 82%, auto 34%;
   }

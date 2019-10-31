@@ -20,6 +20,8 @@
   position: relative;
 
   &:first-child {
+    padding-top: 3px;
+
     @media (max-width: $mobile-width) {
       padding-top: 3px;
     }
