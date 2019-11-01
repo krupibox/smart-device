@@ -1,8 +1,11 @@
 .service {
+  max-width: 1170px;
+  margin: 0 auto;
   margin-top: 101px;
   min-height: 938px;
   background-color: $dark;
   color: $white;
+  padding-top: 58px;
 }
 
 .service h2 {

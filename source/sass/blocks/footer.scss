@@ -64,7 +64,7 @@
 
 .footer__social-list {
   display: flex;
-  padding: 0;
+  padding-left: 60px;
   list-style: none;
   margin-top: 53px;
 
@@ -75,6 +75,7 @@
   @media (max-width: $mobile-width) {
     justify-content: center;
     margin-top: 82px;
+    padding-left: 0;
   }
 
   & li:not(:first-child) {
