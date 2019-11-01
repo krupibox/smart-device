@@ -1,5 +1,4 @@
 .form {
-  outline: 1px solid red;
   width: 599px;
   padding-left: 5px;
 
@@ -21,20 +20,17 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 54px;
-}
-
-.form__inner .form__field:last-of-type {
-  margin-left: 31px;
+  padding-right: 25px;
+  justify-content: space-between;
 }
 
 .form__field input {
   color: $white;
   border: none;
-  background-color: $light;
+  background-color: $white--10opacity;
   @include ptmono(16px, 400, 22px);
   width: 270px;
   padding: 11px;
-  outline: 1px solid green;
 
   &::placeholder {
     opacity: 1;
@@ -47,10 +43,10 @@
   width: 100%;
   height: 200px;
   resize: none;
+  border: none;
   color: $white;
-  background-color: $light;
+  background-color: $white--10opacity;
   @include ptmono(16px, 400, 22px);
-  outline: 1px solid green;
   padding: 11px;
   margin-top: 42px;
 

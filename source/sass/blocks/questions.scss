@@ -1,12 +1,16 @@
 .questions {
-  display: flex;
-  max-width: 1220px;
-  margin: 92px auto 117px;
   background-color: $light;
 }
 
+.questions__inner {
+  display: flex;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding-top: 92px;
+  padding-bottom: 116px;
+}
+
 .questions__image {
-  outline: 1px solid red;
   width: 621px;
   padding-top: 69px;
 }
