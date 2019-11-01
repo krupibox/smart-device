@@ -1,4 +1,5 @@
 .modal {
+  display: block;
   position: absolute;
   z-index: 150px;
   top: 50%;
@@ -12,7 +13,7 @@
   background-color: $light;
 
   &--closed {
-    display: block;
+    display: none;
   }
 }
 
