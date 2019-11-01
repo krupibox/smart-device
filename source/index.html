@@ -50,28 +50,31 @@
     </section>
 
     <!-- Показать модальное окно - удалить класс modal--closed -->
-    <div class="modal modal--closed">
-    <form class="form modal__form" action="" method="POST">
-      <p>Закажите звонок</p>
-      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-      <div class="form__inner modal__inner">
-        <div class="form__field modal__field">
-          <label class="visually-hidden" for="user-name">Имя</label>
-          <input id="user-name" type="text" name="user-name" placeholder="Имя" size="12" required>
-        </div>
-        <div class="form__field modal__field">
-          <label class="visually-hidden" for="user-phone">Телефон</label>
-          <input id="user-phone" type="tel" name="user-phone" placeholder="Телефон" pattern="[0-9]{10}" maxlength="10" required>
-        </div>
-        <textarea name="user-question" placeholder="Ваш вопрос" rows="3" aria-label="Поле для вопроса"></textarea>
+    <div class="overlay">
+      <div class="modal modal--closed">
+        <form class="form modal__form" action="https://echo.htmlacademy.ru" method="POST">
+          <img src="./img/modal-close.svg" alt="Закрыть окно" height="16.56" width="16.56">
+          <p>Закажите звонок</p>
+          <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+          <div class="form__inner modal__inner">
+            <div class="form__field modal__field">
+              <label class="visually-hidden" for="user-callback-name">Имя</label>
+              <input id="user-callback-name" type="text" name="user-callback-name" placeholder="Имя" size="12" required>
+            </div>
+            <div class="form__field modal__field">
+              <label class="visually-hidden" for="user-callback-phone">Телефон</label>
+              <input id="user-callback-phone" type="tel" name="user-callback-phone" placeholder="Телефон" pattern="[0-9]{10}" maxlength="10" required>
+            </div>
+            <textarea name="user-callback-question" placeholder="Ваш вопрос" rows="3" aria-label="Поле для вопроса"></textarea>
+          </div>
+          <div class="form__acceptance modal__acceptance">
+            <button type="submit">Отправить</button>
+            <input id="form-acceptance" type="checkbox" name="form-acceptance" value="1" aria-invalid="false">
+            <label for="form-acceptance">Я согласен на обработку персональных данных</label>
+          </div>
+        </form>
       </div>
-      <div class="form__acceptance modal__acceptance">
-        <button type="submit">Отправить</button>
-        <input id="form-acceptance" type="checkbox" name="form-acceptance" value="1" aria-invalid="false">
-        <label for="form-acceptance">Я согласен на обработку персональных данных</label>
-      </div>
-    </form>
-  </div>
+    </div>
 
   </div>
   <main class="main">
@@ -236,8 +239,8 @@
       </ul>
     </div>
   </footer>
-  <script src="js/picturefill.min.js"></script>
-  <script src="js/popup.min.js"></script>
+  <script src="./js/picturefill.min.js"></script>
+  <script src="./js/modal.min.js"></script>
 </body>
 
 </html>

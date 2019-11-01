@@ -1,16 +1,17 @@
 .modal {
-  display: block;
   position: absolute;
-  z-index: 150px;
   top: 50%;
   right: 0;
   left: 0;
+  z-index: 150;
   display: block;
-  width: 490px;
+  display: block;
   margin-right: auto;
   margin-left: auto;
-  transform: translate(0, -50%);
+  width: 490px;
   background-color: $light;
+  cursor: auto;
+  transform: translate(0, -50%);
 
   &--closed {
     display: none;
@@ -18,8 +19,8 @@
 }
 
 .modal__form {
-  width: 490px;
   padding: 29px 40px 40px;
+  width: 490px;
 
   & p:first-of-type {
     @include roboto-cond(28px, 400, 39px);
@@ -29,6 +30,13 @@
     margin-top: 12px;
     padding-right: 20px;
   }
+}
+
+.modal__form img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
 }
 
 .modal__inner {
@@ -46,25 +54,25 @@
 }
 
 .modal__field input {
+  flex-grow: 1;
   padding-top: 15px;
   padding-right: 23px;
   padding-left: 23px;
-  flex-grow: 1;
 }
 
 .modal textarea {
-  min-height: 104px;
-  max-height: 104px;
   margin-top: 33px;
   padding-right: 23px;
   padding-left: 23px;
+  min-height: 104px;
+  max-height: 104px;
 }
 
 .modal button {
   display: block;
+  flex-grow: 1;
   margin-bottom: 25px;
   padding: 14px 0;
-  flex-grow: 1;
 }
 
 .modal__acceptance {
@@ -73,7 +81,7 @@
 }
 
 .form__acceptance label {
-  width: 100%;
   padding-right: 20px;
   padding-left: 47px;
+  width: 100%;
 }
