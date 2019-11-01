@@ -64,7 +64,6 @@
 .form button {
   display: block;
   width: 270px;
-  margin-top: 43px;
   padding: 12px 0;
   text-align: center;
   text-transform: uppercase;
@@ -74,7 +73,7 @@
   border-radius: 5px;
   background-color: $light;
   @include roboto-cond(14px, 700, 16px);
-
+  // margin-right: auto;
   &:focus,
   &:hover {
     opacity: 0.5;
@@ -86,6 +85,48 @@
 }
 
 .form__acceptance {
+  display: flex;
+  width: 100%;
+  margin-top: 43px;
+  justify-content: space-between;
   @include ptmono(14px, 400, 16px);
   color: $white;
+}
+
+.form__acceptance label {
+  position: relative;
+  width: 265px;
+  padding-left: 20px;
+}
+
+.form__acceptance input[type="checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.form__acceptance label::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  left: 0;
+  background-image: url("../../img/unchecked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__acceptance input {
+  &:checked + label::before {
+    background-image: url("../../img/checked.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
