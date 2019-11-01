@@ -1,0 +1,78 @@
+.modal {
+  position: absolute;
+  z-index: 150px;
+  top: 50%;
+  right: 0;
+  left: 0;
+  display: block;
+  width: 490px;
+  margin-right: auto;
+  margin-left: auto;
+  transform: translate(0, -50%);
+  background-color: $light;
+
+  &--closed {
+    display: block;
+  }
+}
+
+.modal__form {
+  width: 490px;
+  padding: 29px 40px 40px;
+
+  & p:first-of-type {
+    @include roboto-cond(28px, 400, 39px);
+  }
+
+  & p:nth-of-type(2) {
+    margin-top: 12px;
+    padding-right: 20px;
+  }
+}
+
+.modal__inner {
+  margin-top: 33px;
+  padding-right: 0;
+}
+
+.modal__inner .form__field:nth-of-type(2) {
+  margin-top: 33px;
+}
+
+.modal__field {
+  display: flex;
+  flex-grow: 1;
+}
+
+.modal__field input {
+  padding-top: 15px;
+  padding-right: 23px;
+  padding-left: 23px;
+  flex-grow: 1;
+}
+
+.modal textarea {
+  min-height: 104px;
+  max-height: 104px;
+  margin-top: 33px;
+  padding-right: 23px;
+  padding-left: 23px;
+}
+
+.modal button {
+  display: block;
+  margin-bottom: 25px;
+  padding: 14px 0;
+  flex-grow: 1;
+}
+
+.modal__acceptance {
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.form__acceptance label {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 47px;
+}

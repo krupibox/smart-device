@@ -48,6 +48,31 @@
       </a>
       <a class="scroll-down" href="#">Скролл вниз</a>
     </section>
+
+    <!-- Показать модальное окно - удалить класс modal--closed -->
+    <div class="modal modal--closed">
+    <form class="form modal__form" action="" method="POST">
+      <p>Закажите звонок</p>
+      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <div class="form__inner modal__inner">
+        <div class="form__field modal__field">
+          <label class="visually-hidden" for="user-name">Имя</label>
+          <input id="user-name" type="text" name="user-name" placeholder="Имя" size="12" required>
+        </div>
+        <div class="form__field modal__field">
+          <label class="visually-hidden" for="user-phone">Телефон</label>
+          <input id="user-phone" type="tel" name="user-phone" placeholder="Телефон" pattern="[0-9]{10}" maxlength="10" required>
+        </div>
+        <textarea name="user-question" placeholder="Ваш вопрос" rows="3" aria-label="Поле для вопроса"></textarea>
+      </div>
+      <div class="form__acceptance modal__acceptance">
+        <button type="submit">Отправить</button>
+        <input id="form-acceptance" type="checkbox" name="form-acceptance" value="1" aria-invalid="false">
+        <label for="form-acceptance">Я согласен на обработку персональных данных</label>
+      </div>
+    </form>
+  </div>
+
   </div>
   <main class="main">
     <section class="advantages">
@@ -132,7 +157,7 @@
             <img src="./img/airplane@1x.png" srcset="./img/airplane@1x.png 2x" width="511" height="288" alt="Бумажный самолет">
           </picture>
         </div>
-        <form class="form"  action="https://echo.htmlacademy.ru" method="POST">
+        <form class="form" action="https://echo.htmlacademy.ru" method="POST">
           <p>Остались вопросы? Задайте их нам!</p>
           <p>Мы проконсультируем Вас бесплатно</p>
           <div class="form__inner">

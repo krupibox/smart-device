@@ -30,12 +30,14 @@
   color: $white;
   border: none;
   background-color: $white--10opacity;
+
   @include ptmono(16px, 400, 22px);
 
   &::placeholder {
     opacity: 1;
     color: $white;
-    @include ptmono(16px, 400, 22px)
+
+    @include ptmono(16px, 400, 22px);
   }
 }
 
@@ -43,7 +45,6 @@
   display: block;
   width: 100%;
   max-width: none;
-  height: 200px;
   min-height: 154px;
   max-height: 154px;
   margin-top: 42px;
@@ -52,12 +53,14 @@
   color: $white;
   border: none;
   background-color: $white--10opacity;
+
   @include ptmono(16px, 400, 22px);
 
   &::placeholder {
     opacity: 1;
     color: $white;
-    @include ptmono(16px, 400, 22px)
+
+    @include ptmono(16px, 400, 22px);
   }
 }
 
@@ -68,10 +71,10 @@
   text-align: center;
   text-transform: uppercase;
   color: $white;
-  border: none;
   border: 1px solid $white;
   border-radius: 5px;
   background-color: $light;
+
   @include roboto-cond(14px, 700, 16px);
   // margin-right: auto;
   &:focus,
@@ -89,6 +92,7 @@
   width: 100%;
   margin-top: 43px;
   justify-content: space-between;
+
   @include ptmono(14px, 400, 16px);
   color: $white;
 }
