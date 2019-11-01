@@ -64,7 +64,7 @@
 
 .footer__social-list {
   display: flex;
-  padding-left: 60px;
+  padding: 0;
   list-style: none;
   margin-top: 53px;
 
@@ -96,14 +96,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  max-width: 1411px;
+  max-width: 1461px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 3%;
+  padding: 0 25px;
 
   @media (max-width: $tablet-width) {
     width: 100%;
-    padding: 0;
+    max-width: 1411px;
+    padding: 0
   }
 
   @media (max-width: $mobile-width) {
@@ -123,10 +124,11 @@
   }
 
   &--menu {
-    width: 43%;
+    flex-grow: 1;
 
     @media (max-width: $tablet-width) {
-      width: 100%;
+      // width: 100%;
+      width: auto;
       flex-grow: 1;
       margin-right: 0;
       padding-left: 3%;

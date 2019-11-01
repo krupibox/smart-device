@@ -18,10 +18,11 @@
 .info__list {
   display: flex;
   justify-content: space-start;
-  max-width: 1411px;
+  // max-width: 1411px;
+  max-width: 1461px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 3%;
+  padding: 0 25px;
 
   @include ptmono(13px, 400, 24px);
   letter-spacing: 0.05em;
