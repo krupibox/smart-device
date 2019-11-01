@@ -4,15 +4,15 @@
 
   & p:first-of-type {
     @include roboto-cond(36px, 400, 51px);
-    color: $white;
     margin-top: 0;
     margin-bottom: 0;
+    color: $white;
   }
 
   & p:nth-of-type(2) {
     @include ptmono(16px, 400, 22px);
-    color: $white;
     margin-top: 9px;
+    color: $white;
   }
 }
 
@@ -25,12 +25,12 @@
 }
 
 .form__field input {
+  width: 270px;
+  padding: 11px;
   color: $white;
   border: none;
   background-color: $white--10opacity;
   @include ptmono(16px, 400, 22px);
-  width: 270px;
-  padding: 11px;
 
   &::placeholder {
     opacity: 1;
@@ -40,20 +40,48 @@
 }
 
 .form textarea {
+  display: block;
   width: 100%;
+  max-width: none;
   height: 200px;
+  min-height: 154px;
+  max-height: 154px;
+  margin-top: 42px;
+  padding: 11px;
   resize: none;
-  border: none;
   color: $white;
+  border: none;
   background-color: $white--10opacity;
   @include ptmono(16px, 400, 22px);
-  padding: 11px;
-  margin-top: 42px;
 
   &::placeholder {
     opacity: 1;
     color: $white;
     @include ptmono(16px, 400, 22px)
+  }
+}
+
+.form button {
+  display: block;
+  width: 270px;
+  margin-top: 43px;
+  padding: 12px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  border: none;
+  border: 1px solid $white;
+  border-radius: 5px;
+  background-color: $light;
+  @include roboto-cond(14px, 700, 16px);
+
+  &:focus,
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    color: $grey;
   }
 }
 
