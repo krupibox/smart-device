@@ -64,7 +64,7 @@
 .form button {
   display: block;
   width: 270px;
-  padding: 12px 0;
+  padding: 14px 0;
   text-align: center;
   text-transform: uppercase;
   color: $white;
@@ -95,8 +95,9 @@
 
 .form__acceptance label {
   position: relative;
-  width: 265px;
-  padding-left: 20px;
+  width: 287px;
+  padding-left: 32px;
+  padding-top: 10px;
 }
 
 .form__acceptance input[type="checkbox"] {
@@ -118,6 +119,7 @@
   width: 16px;
   height: 16px;
   left: 0;
+  top: 10px;
   background-image: url("../../img/unchecked.svg");
   background-repeat: no-repeat;
   background-position: center;
