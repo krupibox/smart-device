@@ -24,8 +24,10 @@
   list-style: none;
 }
 
-.service {
-  & li a {
+.service li {
+  position: relative;
+
+  & a {
     display: block;
     min-width: 370px;
     min-height: 620px;
@@ -35,30 +37,43 @@
     cursor: pointer;
     color: $white;
     background-repeat: no-repeat;
+
     @include roboto-cond(20px, 400, 30px);
   }
 
-  & li:not(:first-child) a {
+  &:not(:first-child) a {
     margin-left: 30px;
   }
 
-  & li:first-child a {
+  &:first-child a {
     background-image: url("../../img/production-desktop@1x.png");
     background-position: center;
     background-size: cover;
   }
 
-  & li:nth-child(2) a {
+  &:nth-child(2) a {
     background-image: url("../../img/assembling-desktop@1x.png");
     background-position: center;
     background-size: cover;
   }
 
-  & li:last-child a {
+  &:last-child a {
     background-image: url("../../img/components-desktop@1x.png");
     background-position: center;
     background-size: cover;
   }
+}
+
+.service li a::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 63px;
+  height: 63px;
+  content: "";
+  background: url("../../img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .service li > a,
@@ -67,7 +82,7 @@
   color: $white;
 }
 
-.service li > a:hover,
-.service li > a:focus {
-opacity: 0.5;
+.service li > a:focus,
+.service li > a:hover {
+  opacity: 0.5;
 }
