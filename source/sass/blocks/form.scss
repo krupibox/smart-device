@@ -1,0 +1,67 @@
+.form {
+  outline: 1px solid red;
+  width: 599px;
+  padding-left: 5px;
+
+  & p:first-of-type {
+    @include roboto-cond(36px, 400, 51px);
+    color: $white;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  & p:nth-of-type(2) {
+    @include ptmono(16px, 400, 22px);
+    color: $white;
+    margin-top: 9px;
+  }
+}
+
+.form__inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 54px;
+}
+
+.form__inner .form__field:last-of-type {
+  margin-left: 31px;
+}
+
+.form__field input {
+  color: $white;
+  border: none;
+  background-color: $light;
+  @include ptmono(16px, 400, 22px);
+  width: 270px;
+  padding: 11px;
+  outline: 1px solid green;
+
+  &::placeholder {
+    opacity: 1;
+    color: $white;
+    @include ptmono(16px, 400, 22px)
+  }
+}
+
+.form textarea {
+  width: 100%;
+  height: 200px;
+  resize: none;
+  color: $white;
+  background-color: $light;
+  @include ptmono(16px, 400, 22px);
+  outline: 1px solid green;
+  padding: 11px;
+  margin-top: 42px;
+
+  &::placeholder {
+    opacity: 1;
+    color: $white;
+    @include ptmono(16px, 400, 22px)
+  }
+}
+
+.form__acceptance {
+  @include ptmono(14px, 400, 16px);
+  color: $white;
+}

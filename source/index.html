@@ -115,17 +115,44 @@
     </section>
     <section class="service">
       <div class="service__inner">
-      <h2>Service Device предлагает следующие товары и услуги</h2>
-      <ul>
-        <li><a href="#">Производство печатных плат</a></li>
-        <li><a href="#">Монтаж печатных плат</a></li>
-        <li><a href="#">Комплектующие для светотехники</a></li>
-      </ul>
+        <h2>Service Device предлагает следующие товары и услуги</h2>
+        <ul>
+          <li><a href="#">Производство печатных плат</a></li>
+          <li><a href="#">Монтаж печатных плат</a></li>
+          <li><a href="#">Комплектующие для светотехники</a></li>
+        </ul>
       </div>
     </section>
-    <form class="questions">
-      <h2 class="visually-hidden">Задать вопрос</h2>
-    </form>
+    <section class="questions">
+      <h2 class="visually-hidden">Форма отправки вопроса</h2>
+      <div class="questions__image">
+        <picture>
+          <!-- 1х: 511px; 2x: 1022px -->
+          <img src="./img/airplane@1x.png" srcset="./img/airplane@1x.png 2x" width="511" height="288" alt="Бумажный самолет">
+        </picture>
+      </div>
+      <form class="form" action="">
+        <p>Остались вопросы? Задайте их нам!</p>
+        <p>Мы проконсультируем Вас бесплатно</p>
+        <div class="form__inner">
+          <div class="form__field">
+            <label class="visually-hidden" for="user-name">Имя</label>
+            <input id="user-name" type="text" name="user-name" placeholder="Имя" size="12" required>
+          </div>
+          <div class="form__field">
+            <label class="visually-hidden" for="user-phone">Телефон</label>
+            <input id="user-phone" type="tel" name="user-phone" placeholder="Телефон" pattern="[0-9]{10}" maxlength="10" required>
+          </div>
+          <textarea name="emotions" placeholder="Ваш вопрос" rows="4" aria-label="Поле для вопроса"></textarea>
+        </div>
+        <button type="submit">Задать вопрос</button>
+        <div class="form__acceptance">
+        <input id="form-acceptance" type="checkbox" name="form-acceptance" value="1" aria-invalid="false">
+        <label for="form-acceptance">Я согласен на обработку персональных данных
+        </label>
+        </div>
+      </form>
+    </section>
   </main>
   <footer class="footer">
     <div class="footer__group">

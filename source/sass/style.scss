@@ -3,7 +3,7 @@
 @import "./global/variables.scss";
 @import "./global/mixins.scss";
 @import "./global/global";
-// @import "./global/pixel-perfect";
+@import "./global/pixel-perfect";
 @import "./blocks/visually-hidden";
 @import "./blocks/wrapper";
 @import "./blocks/container";
@@ -18,5 +18,6 @@
 @import "./blocks/about-us";
 @import "./blocks/service";
 @import "./blocks/questions";
+@import "./blocks/form";
 @import "./blocks/footer";
 @import "./blocks/info";

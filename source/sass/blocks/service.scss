@@ -9,7 +9,6 @@
   margin: 101px auto 0;
   padding-top: 58px;
   padding-bottom: 129px;
-  outline: 1px solid red;
 }
 
 .service h2 {
@@ -37,6 +36,8 @@
     cursor: pointer;
     color: $white;
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     @include roboto-cond(20px, 400, 30px);
   }
@@ -47,20 +48,26 @@
 
   &:first-child a {
     background-image: url("../../img/production-desktop@1x.png");
-    background-position: center;
-    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/production-desktop@2x.png");
+    }
   }
 
   &:nth-child(2) a {
     background-image: url("../../img/assembling-desktop@1x.png");
-    background-position: center;
-    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/assembling-desktop@2x.png");
+    }
   }
 
   &:last-child a {
     background-image: url("../../img/components-desktop@1x.png");
-    background-position: center;
-    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/components-desktop@2x.png");
+    }
   }
 }
 

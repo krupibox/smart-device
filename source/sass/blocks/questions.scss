@@ -1,4 +1,16 @@
 .questions {
-  outline: 2px solid red;
-  min-height: 670px; // временно для верстки
+  display: flex;
+  max-width: 1220px;
+  margin: 92px auto 117px;
+  background-color: $light;
+}
+
+.questions__image {
+  outline: 1px solid red;
+  width: 621px;
+  padding-top: 69px;
+}
+
+.questions__image img {
+  max-width: none;
 }
