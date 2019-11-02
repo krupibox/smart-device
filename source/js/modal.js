@@ -12,55 +12,63 @@
   var formQuestion = form.querySelector('[name=user-callback-question]');
 
   var isStorageSupport = true;
-  var storage = '';
 
   try {
-    storage = localStorage.getItem('Name');
+    formName.value = localStorage.getItem('Name');
+    formPhone.value = localStorage.getItem('Phone');
+    formQuestion.value = localStorage.getItem('Question');
+
   } catch (err) {
     isStorageSupport = false;
   }
 
-  open.addEventListener('click', function () {
+  open.addEventListener('click', function (evt) {
     if (modal.classList.contains('modal--closed')) {
+      evt.preventDefault();
       modal.classList.remove('modal--closed');
       overlay.style.display = 'block';
 
-      if (storage) {
-        formName.value = storage;
+      if (formName.value) {
         formPhone.focus();
       } else {
         formName.focus();
       }
+
+      if (formName.value & formPhone.value) {
+        formQuestion.focus();
+      }
     }
   });
 
-  form.addEventListener('submit', function () {
+  form.addEventListener('submit', function (evt) {
     if (isStorageSupport) {
+      evt.preventDeafault();
       localStorage.setItem('Name', formName.value);
       localStorage.setItem('Phone', formPhone.value);
       localStorage.setItem('Question', formQuestion.value);
     }
   });
 
-  close.addEventListener('click', function () {
+  close.addEventListener('click', function (evt) {
     if (!modal.classList.contains('modal--closed')) {
-      closeModal();
+      closeModal(evt);
     }
   });
 
   overlay.addEventListener('click', function (evt) {
     if (!modal.classList.contains('modal--closed') && evt.target === overlay) {
-      closeModal();
+      closeModal(evt);
     }
   });
 
   window.addEventListener('keydown', function (evt) {
     if (evt.keyCode === 27 && !modal.classList.contains('modal--closed')) {
-      closeModal();
+      closeModal(evt);
     }
   });
 
-  function closeModal() {
+  function closeModal(event) {
+    event.preventDefault();
     modal.classList.add('modal--closed');
     overlay.style.display = 'none';
   }
