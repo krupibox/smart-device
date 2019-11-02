@@ -1,23 +1,63 @@
 .about-us {
   display: flex;
-  margin-top: 74px;
   max-width: 1411px;
+  margin-top: 74px;
   margin-right: auto;
   margin-left: auto;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 22px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 32px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 .about-us img {
   max-width: none;
+
+  @media (max-width: $tablet-width) {
+    width: 131px;
+    height: 347px;
+    padding-top: 10px;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .about-us div:first-of-type {
-  padding-left: 121px;
   padding-top: 11px;
+  padding-left: 121px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 0;
+    padding-left: 28px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .about-us div:nth-of-type(2) {
   padding-right: 130px;
   padding-left: 64px;
+
+  @media (max-width: $tablet-width) {
+    padding-right: 22px;
+    padding-left: 53px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .about-us h2 {
@@ -25,6 +65,15 @@
   margin-top: 0;
   margin-bottom: 20px;
   color: $grey;
+
+  @media (max-width: $tablet-width) {
+    @include roboto-cond(32px, 400, 51px);
+  }
+
+  @media (max-width: $mobile-width) {
+    @include roboto-cond(28px, 400, 51px);
+    margin-bottom: 15px;
+  }
 }
 
 .about-us div p {
@@ -32,9 +81,30 @@
   color: $grey;
 }
 
+.about-us div p:first-of-type {
+  padding-right: 0;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 0;
+  }
+}
+
 .about-us div p:nth-of-type(2) {
   margin-top: 21px;
-  margin-bottom: 38px;
+  margin-bottom: 37px;
+
+  @media (max-width: $tablet-width) {
+    overflow: hidden;
+    height: 89px;
+    margin-bottom: 40px;
+    text-overflow: clip;
+  }
+
+  @media (max-width: $mobile-width) {
+    height: 177px;
+    margin-top: 40px;
+    margin-bottom: 26px;
+  }
 }
 
 .about-us__button {
