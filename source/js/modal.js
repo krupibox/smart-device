@@ -44,22 +44,24 @@
 
   close.addEventListener('click', function () {
     if (!modal.classList.contains('modal--closed')) {
-      modal.classList.add('modal--closed');
-      overlay.style.display = 'none';
+      closeModal();
     }
   });
 
   overlay.addEventListener('click', function (evt) {
     if (!modal.classList.contains('modal--closed') && evt.target === overlay) {
-      modal.classList.add('modal--closed');
-      overlay.style.display = 'none';
+      closeModal();
     }
   });
 
   window.addEventListener('keydown', function (evt) {
     if (evt.keyCode === 27 && !modal.classList.contains('modal--closed')) {
-      modal.classList.add('modal--closed');
-      overlay.style.display = 'none';
+      closeModal();
     }
   });
+
+  function closeModal() {
+    modal.classList.add('modal--closed');
+    overlay.style.display = 'none';
+  }
 })();
