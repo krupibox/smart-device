@@ -15,8 +15,6 @@
 
   try {
     formName.value = localStorage.getItem('Name');
-    formPhone.value = localStorage.getItem('Phone');
-    formQuestion.value = localStorage.getItem('Question');
 
   } catch (err) {
     isStorageSupport = false;
@@ -28,21 +26,26 @@
       modal.classList.remove('modal--closed');
       overlay.style.display = 'block';
 
+      if (isStorageSupport) {
+        formName.value = localStorage.getItem('Name');
+        formPhone.value = localStorage.getItem('Phone');
+        formQuestion.value = localStorage.getItem('Question');
+      }
+
       if (formName.value) {
         formPhone.focus();
       } else {
         formName.focus();
       }
 
-      if (formName.value & formPhone.value) {
+      if (formName.value && formPhone.value) {
         formQuestion.focus();
       }
     }
   });
 
-  form.addEventListener('submit', function (evt) {
+  form.addEventListener('submit', function () {
     if (isStorageSupport) {
-      evt.preventDeafault();
       localStorage.setItem('Name', formName.value);
       localStorage.setItem('Phone', formPhone.value);
       localStorage.setItem('Question', formQuestion.value);
