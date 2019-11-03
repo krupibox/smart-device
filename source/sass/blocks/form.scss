@@ -1,6 +1,10 @@
 .form {
-  width: 599px;
-  padding-left: 5px;
+  width: 570px;
+  // padding-left: 5px;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 auto;
+  }
 
   & p:first-of-type {
     @include roboto-cond(36px, 400, 51px);
@@ -20,13 +24,16 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 54px;
-  padding-right: 25px;
+  // padding-right: 25px;
   justify-content: space-between;
 }
 
 .form__field input {
   width: 270px;
-  padding: 11px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   color: $white;
   border: none;
   background-color: $white--10opacity;
@@ -48,7 +55,10 @@
   min-height: 154px;
   max-height: 154px;
   margin-top: 42px;
-  padding: 11px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   resize: none;
   color: $white;
   border: none;
@@ -100,7 +110,7 @@
 .form__acceptance label {
   position: relative;
   width: 287px;
-  padding-left: 32px;
+  padding-left: 56px;
   padding-top: 10px;
 }
 
@@ -122,17 +132,15 @@
   content: "";
   width: 16px;
   height: 16px;
-  left: 0;
+  left: 24px;
   top: 10px;
   background-image: url("../../img/unchecked.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.form__acceptance input {
-  &:checked + label::before {
-    background-image: url("../../img/checked.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+.form__acceptance input:checked + label::before {
+  background-image: url("../../img/checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }

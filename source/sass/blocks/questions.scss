@@ -1,5 +1,4 @@
 .questions {
-  display: none;
   background-color: $light;
 }
 
@@ -12,8 +11,12 @@
 }
 
 .questions__image {
-  width: 621px;
+  width: 51.3%;
   padding-top: 69px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .questions__image img {
