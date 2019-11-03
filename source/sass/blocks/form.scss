@@ -1,9 +1,14 @@
 .form {
   width: 570px;
-  // padding-left: 5px;
 
   @media (max-width: $tablet-width) {
     margin: 0 auto;
+    width: 595px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0 auto;
+    width: 100%;
   }
 
   & p:first-of-type {
@@ -11,12 +16,28 @@
     margin-top: 0;
     margin-bottom: 0;
     color: $white;
+
+    @media (max-width: $tablet-width) {
+    @include roboto-cond(32px, 400, 51px);
+    }
+
+    @media (max-width: $mobile-width) {
+    @include roboto-cond(28px, 400, 41px);
+    }
   }
 
   & p:nth-of-type(2) {
     @include ptmono(16px, 400, 22px);
     margin-top: 9px;
     color: $white;
+
+    @media (max-width: $tablet-width) {
+    margin-top: 13px;
+    }
+
+    @media (max-width: $mobile-width) {
+    margin-top: 10px;
+    }
   }
 }
 
@@ -24,9 +45,19 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 54px;
-  // padding-right: 25px;
   justify-content: space-between;
+
+  @media (max-width: $mobile-width) {
+  margin-top: 26px;
+  }
 }
+
+.form__field {
+  @media (max-width: $mobile-width) {
+  width: 100%;
+  }
+}
+
 
 .form__field input {
   width: 270px;
@@ -39,6 +70,21 @@
   background-color: $white--10opacity;
 
   @include ptmono(16px, 400, 22px);
+
+  @media (max-width: $tablet-width) {
+    min-width: 280px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    margin-bottom: 30px;
+    padding-left: 17px;
+    padding-right: 17px;
+  }
 
   &::placeholder {
     opacity: 1;
@@ -66,6 +112,17 @@
 
   @include ptmono(16px, 400, 22px);
 
+  @media (max-width: $tablet-width) {
+    min-height: 165px;
+    max-height: 165px;
+  }
+
+  @media (max-width: $mobile-width) {
+  margin-top: 4px;
+  min-height: 104px;
+  max-height: 104px;
+  }
+
   &::placeholder {
     opacity: 1;
     color: $white;
@@ -86,7 +143,15 @@
   background-color: $light;
 
   @include roboto-cond(14px, 700, 16px);
-  // margin-right: auto;
+
+  @media (max-width: $tablet-width) {
+  width: 285px;
+  }
+
+  @media (max-width: $mobile-width) {
+  width: 290px;
+  }
+
   &:focus,
   &:hover {
     opacity: 0.5;
@@ -105,6 +170,16 @@
 
   @include ptmono(14px, 400, 16px);
   color: $white;
+
+  @media (max-width: $tablet-width) {
+  margin-top: 41px;
+  }
+
+  @media (max-width: $mobile-width) {
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
 }
 
 .form__acceptance label {
@@ -112,6 +187,15 @@
   width: 287px;
   padding-left: 56px;
   padding-top: 10px;
+
+  @media (max-width: $tablet-width) {
+  padding-left: 49px;
+  }
+
+  @media (max-width: $mobile-width) {
+  padding-left: 34px;
+  padding-top: 32px;
+  }
 }
 
 .form__acceptance input[type="checkbox"] {
@@ -137,6 +221,15 @@
   background-image: url("../../img/unchecked.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (max-width: $tablet-width) {
+  left: 16px;
+  }
+
+  @media (max-width: $mobile-width) {
+  top: 32px;
+  left: 1px;
+  }
 }
 
 .form__acceptance input:checked + label::before {

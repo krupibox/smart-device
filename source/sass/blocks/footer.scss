@@ -152,7 +152,7 @@
       flex-grow: 0;
       border-top: 1px solid $line;
       border-bottom: 1px solid $line;
-      padding-bottom: 16px;
+      padding-bottom: 11px;
       padding-left: 0;
       padding-right: 0;
     }
@@ -168,9 +168,8 @@
   color: $dark;
 
   @media (max-width: $mobile-width) {
-    padding-top: 13px;
-    padding-bottom: 13px;
-    margin-left: 5%;
+    padding: 14px 0;
+    margin-left: 15px;
 
     &::after {
       position: absolute;

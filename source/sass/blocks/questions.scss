@@ -8,6 +8,18 @@
   margin: 0 auto;
   padding-top: 92px;
   padding-bottom: 113px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 78px;
+    padding-bottom: 101px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 29px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .questions__image {
