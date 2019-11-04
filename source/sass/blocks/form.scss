@@ -141,8 +141,9 @@
   border: 1px solid $white;
   border-radius: 5px;
   background-color: $light;
-
+  letter-spacing: 0.05em;
   @include roboto-cond(14px, 700, 16px);
+
 
   @media (max-width: $tablet-width) {
   width: 285px;
