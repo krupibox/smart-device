@@ -27,41 +27,41 @@
   padding-right: 25px;
 
   background-color: $dark;
-  background-image: url("../../img/background-desktop@1x.png"), url("../../img/triangles-desktop.svg"), url("../../img/boards-desktop@1x.png");
+  background-image: url("../../img/boards-desktop@1x.png"), url("../../img/triangles.svg"), url("../../img/background-desktop@1x.png");
   background-repeat: no-repeat;
-  background-position: center center, 80% bottom, 85% 70%;
-  background-size: cover, auto, auto 515px;
+  background-position: 85.5% 71%, 80.2% 69.1%, center center;
+  background-size: auto 58.6%, auto, cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/background-desktop@2x.png"), url("../../img/triangles-desktop.svg"), url("../../img/boards-desktop@2x.png");
+    background-image: url("../../img/boards-desktop@2x.png"), url("../../img/triangles.svg"), url("../../img/background-desktop@2x.png");
   }
 
   @media (max-width: $tablet-width) {
-    background-image: url("../../img/background-tablet@1x.png"), url("../../img/triangles-tablet.svg"), url("../../img/boards-tablet@1x.png");
+    background-image: url("../../img/boards-tablet@1x.png"), url("../../img/triangles.svg"), url("../../img/background-tablet@1x.png");
   }
 
   @media (max-width: $tablet-width) and (min-resolution: $retina-dpi), (max-width: $tablet-width) and (min-resolution: $retina-dppx) {
-    background-image: url("../../img/background-tablet@2x.png"), url("../../img/triangles-tablet.svg"), url("../../img/boards-tablet@2x.png");
+    background-image: url("../../img/boards-tablet@2x.png"), url("../../img/triangles.svg"), url("../../img/background-tablet@2x.png");
   }
 
   @media (max-width: $tablet-width) {
-    background-position: center top, right top, right 33%;
-    background-size: cover, auto 82%, auto 50%;
+    background-position: right 33%, 456px 82px, center top;
+    background-size: auto 50%, auto 56%, cover;
   }
 
   @media (max-width: $mobile-width) {
-    background-image: url("../../img/background-tablet@1x.png"), url("../../img/triangles-tablet.svg"), url("../../img/boards-mobile@1x.png");
+    background-image: url("../../img/boards-mobile@1x.png"), url("../../img/triangles.svg"), url("../../img/background-tablet@1x.png");
   }
 
   @media (max-width: $mobile-width) and (min-resolution: $retina-dpi), (max-width: $mobile-width) and (min-resolution: $retina-dppx) {
-    background-image: url("../../img/background-tablet@2x.png"), url("../../img/triangles-tablet.svg"), url("../../img/boards-mobile@2x.png");
+    background-image: url("../../img/boards-mobile@2x.png"), url("../../img/triangles.svg"), url("../../img/background-tablet@2x.png");
   }
 
   @media (max-width: $mobile-width) {
     padding-left: 0;
     padding-right: 0;
-    background-position: center top, 65% top, 88% 22%;
-    background-size: cover, auto 82%, auto 34%;
+    background-position: 88% 22%, 171px 76px, center top;
+    background-size: auto 34%, auto 55%, cover;
   }
 }
 

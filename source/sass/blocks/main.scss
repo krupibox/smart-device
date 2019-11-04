@@ -1,9 +1,16 @@
 .main {
+  background-image: url("../../img/main-triangles.svg");
+  background-position: 94% -3%;
+  background-size: auto;
+  background-repeat: no-repeat;
+
   @media (max-width: $tablet-width) {
-    // min-height: 2898px;  // временно для сетки
+    background-image: url("../../img/main-triangle.svg");
+    background-position: 283px 0;
+    background-size: auto;
   }
 
   @media (max-width: $mobile-width) {
-    // height: 3520px; // временно для сетки
+    background-position: 11% 22.3%;
   }
 }
