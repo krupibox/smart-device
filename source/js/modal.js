@@ -1,7 +1,8 @@
 'use strict';
 (function () {
 
-  var header = document.querySelector('.header__container');
+  var body = document.querySelector('body');
+  var header = body.querySelector('.header__container');
   var open = header.querySelector('.button--callback');
   var overlay = header.querySelector('.overlay');
   var modal = header.querySelector('.modal');
@@ -24,6 +25,7 @@
     if (modal.classList.contains('modal--closed')) {
       evt.preventDefault();
       modal.classList.remove('modal--closed');
+      body.classList.add('noscroll');
       overlay.style.display = 'block';
 
       if (isStorageSupport) {
@@ -72,6 +74,7 @@
 
   function closeModal(event) {
     event.preventDefault();
+    body.classList.remove('noscroll');
     modal.classList.add('modal--closed');
     overlay.style.display = 'none';
   }

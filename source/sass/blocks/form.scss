@@ -139,6 +139,7 @@
 
   @media (max-width: $mobile-width) {
     width: 290px;
+    margin-right: 2%;
   }
 
   &:focus,
@@ -161,6 +162,7 @@
 
   @media (max-width: $tablet-width) {
     margin-top: 41px;
+    justify-content: space-between;
   }
 
   @media (max-width: $mobile-width) {
