@@ -15,6 +15,8 @@
   margin: 0 auto;
   padding-top: 92px;
   padding-bottom: 113px;
+  padding-left: 25px;
+  padding-right: 25px;
   max-width: 1220px;
 
   @media (max-width: $tablet-width) {
@@ -30,6 +32,7 @@
 .questions__image {
   padding-top: 69px;
   width: 51.3%;
+  padding-right: 25px;
 
   @media (max-width: $tablet-width) {
     display: none;
@@ -37,5 +40,5 @@
 }
 
 .questions__image img {
-  max-width: none;
+  // max-width: none;
 }
