@@ -18,8 +18,10 @@
   @include roboto-cond(25px, 700, 29px);
 
   @media (max-width: $tablet-width) {
+    min-width: 137px;
     width: auto;
     margin-right: 0;
+    padding-left: 3px;
   }
 
   @media (max-width: $mobile-width) {

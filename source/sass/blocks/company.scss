@@ -22,6 +22,7 @@
 
 .company h1 {
   margin-bottom: 33px;
+  margin-left: -5px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: $white;
@@ -101,7 +102,7 @@
   @media (max-width: $tablet-width) {
     @include roboto-cond(16px, 700, 19px);
     width: 379px;
-    margin-top: 53px;
+    margin-top: 55px;
     margin-left: 50px;
   }
 

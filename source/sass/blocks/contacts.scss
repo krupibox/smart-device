@@ -8,7 +8,7 @@
   justify-content: flex-end;
 
   @media (max-width: $tablet-width) {
-    padding-top: 2px;
+    padding-top: 0;
   }
 
   @media (max-width: $mobile-width) {
@@ -21,6 +21,10 @@
 
   &:first-child {
     padding-top: 3px;
+
+    @media (max-width: $tablet-width) {
+      padding-top: 0;
+    }
 
     @media (max-width: $mobile-width) {
       padding-top: 3px;
