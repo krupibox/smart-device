@@ -41,8 +41,8 @@
 }
 
 .footer__social {
-  padding-top: 10px;
-  width: 30%;
+  padding-top: 7px;
+  width: 29.7%;
 
   @media (max-width: $tablet-width) {
     width: 100%;
@@ -164,6 +164,7 @@
   position: relative;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  margin-top: 13px;
 
   @include roboto-cond(15px, 400, 16px);
   color: $dark;
@@ -181,6 +182,11 @@
       background-position: right;
       cursor: pointer;
       z-index: 100;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      opacity: 0.5;
     }
 
     &--close::after {
@@ -220,7 +226,7 @@
   &--menu {
     column-count: 2;
     column-gap: 2%;
-    width: 91%;
+    width: 92%;
 
     @media (max-width: $tablet-width) {
       column-count: auto;

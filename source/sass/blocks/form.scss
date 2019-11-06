@@ -18,6 +18,7 @@
     @include roboto-cond(36px, 400, 51px);
     margin-top: 0;
     margin-bottom: 0;
+    margin-left: -5px;
     color: $white;
 
     @media (max-width: $tablet-width) {
