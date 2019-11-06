@@ -17,7 +17,7 @@
   padding-bottom: 113px;
   padding-left: 25px;
   padding-right: 25px;
-  max-width: 1220px;
+  max-width: 1270px;
 
   @media (max-width: $tablet-width) {
     padding-top: 78px;
@@ -37,8 +37,4 @@
   @media (max-width: $tablet-width) {
     display: none;
   }
-}
-
-.questions__image img {
-  // max-width: none;
 }

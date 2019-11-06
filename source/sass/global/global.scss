@@ -5,6 +5,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+
   @include ptmono(16px, 400, 22px);
 }
 
