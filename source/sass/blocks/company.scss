@@ -85,7 +85,8 @@
 
 .company__button {
   display: block;
-  width: 407px;
+  min-width: 407px;
+  max-width: 407px;
   margin-top: 45px;
   margin-left: 92px;
   padding: 17px 0;
