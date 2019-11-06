@@ -2,7 +2,7 @@
 (function () {
 
   var body = document.querySelector('body');
-  var header = body.querySelector('.header__container');
+  var header = body.querySelector('.inner');
   var open = header.querySelector('.button--callback');
   var overlay = header.querySelector('.overlay');
   var modal = header.querySelector('.modal');
