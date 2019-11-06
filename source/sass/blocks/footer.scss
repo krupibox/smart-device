@@ -185,14 +185,14 @@
     &--close::after {
       width: 16px;
       height: 16px;
-      background-image: url("../../img/plus.svg");
+      background-image: url("../img/plus.svg");
     }
 
     &--open::after {
       width: 16px;
       height: 2px;
       top: 19px;
-      background-image: url("../../img/minus.svg");
+      background-image: url("../img/minus.svg");
     }
   }
 }

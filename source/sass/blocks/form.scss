@@ -207,7 +207,7 @@
   left: 24px;
   width: 16px;
   height: 16px;
-  background-image: url("../../img/unchecked.svg");
+  background-image: url("../img/unchecked.svg");
   background-position: center;
   background-repeat: no-repeat;
   content: "";
@@ -223,7 +223,7 @@
 }
 
 .form__acceptance input:checked + label::before {
-  background-image: url("../../img/checked.svg");
+  background-image: url("../img/checked.svg");
   background-position: center;
   background-repeat: no-repeat;
 }

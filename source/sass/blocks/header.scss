@@ -27,21 +27,21 @@
   padding-right: 25px;
 
   background-color: $dark;
-  background-image: url("../../img/boards-desktop@1x.png"), url("../../img/triangles.svg"), url("../../img/background-desktop@1x.png");
+  background-image: url("../img/boards-desktop@1x.png"), url("../img/triangles.svg"), url("../img/background-desktop@1x.png");
   background-repeat: no-repeat;
   background-position: 85.5% 71%, 80.2% 69.1%, center center;
   background-size: auto 58.6%, auto, cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/boards-desktop@2x.png"), url("../../img/triangles.svg"), url("../../img/background-desktop@2x.png");
+    background-image: url("../img/boards-desktop@2x.png"), url("../img/triangles.svg"), url("../img/background-desktop@2x.png");
   }
 
   @media (max-width: $tablet-width) {
-    background-image: url("../../img/boards-tablet@1x.png"), url("../../img/triangles.svg"), url("../../img/background-tablet@1x.png");
+    background-image: url("../img/boards-tablet@1x.png"), url("../img/triangles.svg"), url("../img/background-tablet@1x.png");
   }
 
   @media (max-width: $tablet-width) and (min-resolution: $retina-dpi), (max-width: $tablet-width) and (min-resolution: $retina-dppx) {
-    background-image: url("../../img/boards-tablet@2x.png"), url("../../img/triangles.svg"), url("../../img/background-tablet@2x.png");
+    background-image: url("../img/boards-tablet@2x.png"), url("../img/triangles.svg"), url("../img/background-tablet@2x.png");
   }
 
   @media (max-width: $tablet-width) {
@@ -50,11 +50,11 @@
   }
 
   @media (max-width: $mobile-width) {
-    background-image: url("../../img/boards-mobile@1x.png"), url("../../img/triangles.svg"), url("../../img/background-tablet@1x.png");
+    background-image: url("../img/boards-mobile@1x.png"), url("../img/triangles.svg"), url("../img/background-tablet@1x.png");
   }
 
   @media (max-width: $mobile-width) and (min-resolution: $retina-dpi), (max-width: $mobile-width) and (min-resolution: $retina-dppx) {
-    background-image: url("../../img/boards-mobile@2x.png"), url("../../img/triangles.svg"), url("../../img/background-tablet@2x.png");
+    background-image: url("../img/boards-mobile@2x.png"), url("../img/triangles.svg"), url("../img/background-tablet@2x.png");
   }
 
   @media (max-width: $mobile-width) {

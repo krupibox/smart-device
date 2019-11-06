@@ -104,74 +104,74 @@
   }
 
   &:first-child a {
-    background-image: url("../../img/production-desktop@1x.png");
+    background-image: url("../img/production-desktop@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/production-desktop@2x.png");
+      background-image: url("../img/production-desktop@2x.png");
     }
 
     @media (max-width: $tablet-width) {
-      background-image: url("../../img/production-tablet@1x.png");
+      background-image: url("../img/production-tablet@1x.png");
     }
 
     @media (max-width: $tablet-width) and (min-resolution: $retina-dpi), (max-width: $tablet-width) and (min-resolution: $retina-dppx) {
-      background-image: url("../../img/production-tablet@2x.png");
+      background-image: url("../img/production-tablet@2x.png");
     }
 
     @media (max-width: $mobile-width) {
-      background-image: url("../../img/production-mobile@1x.png");
+      background-image: url("../img/production-mobile@1x.png");
     }
 
     @media (max-width: $mobile-width) and (min-resolution: $retina-dpi), (max-width: $mobile-width) and (min-resolution: $retina-dppx) {
-      background-image: url("../../img/production-mobile@2x.png");
+      background-image: url("../img/production-mobile@2x.png");
     }
   }
 
   &:nth-child(2) a {
-    background-image: url("../../img/assembling-desktop@1x.png");
+    background-image: url("../img/assembling-desktop@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/assembling-desktop@2x.png");
+      background-image: url("../img/assembling-desktop@2x.png");
     }
 
     @media (max-width: $tablet-width) {
-      background-image: url("../../img/assembling-tablet@1x.png");
+      background-image: url("../img/assembling-tablet@1x.png");
     }
 
     @media (max-width: $tablet-width) and (min-resolution: $retina-dpi), (max-width: $tablet-width) and (min-resolution: $retina-dppx) {
-      background-image: url("../../img/assembling-tablet@2x.png");
+      background-image: url("../img/assembling-tablet@2x.png");
     }
 
     @media (max-width: $mobile-width) {
-      background-image: url("../../img/assembling-mobile@1x.png");
+      background-image: url("../img/assembling-mobile@1x.png");
     }
 
     @media (max-width: $mobile-width) and (min-resolution: $retina-dpi), (max-width: $mobile-width) and (min-resolution: $retina-dppx) {
-      background-image: url("../../img/assembling-mobile@2x.png");
+      background-image: url("../img/assembling-mobile@2x.png");
     }
   }
 
   &:last-child a {
-    background-image: url("../../img/components-desktop@1x.png");
+    background-image: url("../img/components-desktop@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/components-desktop@2x.png");
+      background-image: url("../img/components-desktop@2x.png");
     }
 
     @media (max-width: $tablet-width) {
-      background-image: url("../../img/components-tablet@1x.png");
+      background-image: url("../img/components-tablet@1x.png");
     }
 
     @media (max-width: $tablet-width) and (min-resolution: $retina-dpi), (max-width: $tablet-width) and (min-resolution: $retina-dppx) {
-      background-image: url("../../img/components-tablet@2x.png");
+      background-image: url("../img/components-tablet@2x.png");
     }
 
     @media (max-width: $mobile-width) {
-      background-image: url("../../img/components-mobile@1x.png");
+      background-image: url("../img/components-mobile@1x.png");
     }
 
     @media (max-width: $mobile-width) and (min-resolution: $retina-dpi), (max-width: $mobile-width) and (min-resolution: $retina-dppx) {
-      background-image: url("../../img/components-mobile@2x.png");
+      background-image: url("../img/components-mobile@2x.png");
     }
   }
 }
@@ -182,7 +182,7 @@
   bottom: 0;
   width: 63px;
   height: 63px;
-  background: url("../../img/arrow.svg");
+  background: url("../img/arrow.svg");
   background-color: $light;
   background-position: center;
   background-repeat: no-repeat;
