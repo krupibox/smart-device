@@ -49,7 +49,7 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid $line;
-    padding: 0 3% 16px;
+    padding: 0 25px 16px;
   }
 
   @media (max-width: $mobile-width) {
@@ -94,14 +94,15 @@
 
 .footer__group {
   display: flex;
-  flex-wrap: wrap;
   justify-content: flex-start;
+  flex-wrap: nowrap;
   max-width: 1461px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 25px;
 
   @media (max-width: $tablet-width) {
+    flex-wrap: wrap;
     width: 100%;
     max-width: 1411px;
     padding: 0;
@@ -131,7 +132,7 @@
       width: auto;
       flex-grow: 1;
       margin-right: 0;
-      padding-left: 3%;
+      padding-left: 25px;
     }
 
     @media (max-width: $mobile-width) {
@@ -143,9 +144,9 @@
 
   &--office {
     @media (max-width: $tablet-width) {
-      padding-right: 3%;
+      padding-right: 25px;
       flex-grow: 0.1;
-      padding-left: 3%;
+      padding-left: 25px;
     }
 
     @media (max-width: $mobile-width) {
@@ -218,10 +219,12 @@
 
   &--menu {
     column-count: 2;
-    column-gap: 0;
+    column-gap: 2%;
+    width: 91%;
 
     @media (max-width: $tablet-width) {
       column-count: auto;
+      width: auto;
     }
   }
 
