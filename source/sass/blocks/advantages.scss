@@ -75,10 +75,8 @@
   }
 }
 
-.advantages li:nth-of-type(3) h3 {
-  @media (max-width: $mobile-width) {
-    @include roboto-cond(20px, 400, 28px);
-  }
+.advantages li:nth-of-type(3) svg {
+  margin-bottom: 4px;
 }
 
 .advantages p {
