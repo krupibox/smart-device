@@ -9,8 +9,6 @@
   var close = modal.querySelector('img');
   var modalForm = header.querySelector('.modal__form');
   var form = body.querySelector('.form:not(.modal__form)');
-  var buttonModalForm = modalForm.querySelector('button');
-  var buttonForm = form.querySelector('button');
   var modalFormName = modalForm.querySelector('#modal-form-name');
   var modalFormPhone = modalForm.querySelector('#modal-form-phone');
   var modalFormQuestions = modalForm.querySelector('#modal-form-questions');
@@ -22,8 +20,12 @@
     mask: '+{7} (000) 000-00-00'
   };
 
+  /* eslint-disable */
+
   var maskModalFromName = IMask(modalFormPhone, maskOptions);
   var maskFormName = IMask(formPhone, maskOptions);
+
+  /* eslint-enable */
 
   maskModalFromName.updateValue();
   maskFormName.updateValue();
@@ -69,15 +71,6 @@
     window.localStorage.clear();
     forms.reset();
   };
-
-  var printLocalStorage = function (forms) {
-    Array.from(forms.querySelectorAll('input:not([type=checkbox]), textarea')).
-    forEach(function (element) {
-      console.log(element.value);
-    });
-  };
-
-
 
   if (isStorageSupport) {
     getItemForm();
