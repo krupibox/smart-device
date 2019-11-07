@@ -65,9 +65,9 @@
 
   var clearLocalStorage = function (forms) {
     Array.from(forms.querySelectorAll('input:not([type=checkbox]), textarea')).
-    forEach(function (element) {
-      element.value = '';
-    });
+        forEach(function (element) {
+          element.value = '';
+        });
     window.localStorage.clear();
     forms.reset();
   };
