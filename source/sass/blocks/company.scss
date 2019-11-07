@@ -110,8 +110,9 @@
 
   @media (max-width: $mobile-width) {
     @include roboto-cond(16px, 700, 19px);
-    width: 290px;
-    margin-top: 40px;
+    min-width: 290px;
+    max-width: 290px;
+    margin-top: 42px;
     margin-left: 0;
   }
 }
