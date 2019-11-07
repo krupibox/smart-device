@@ -59,14 +59,14 @@
           <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
           <div class="form__inner modal__inner">
             <div class="form__field modal__field">
-              <label class="visually-hidden" for="user-callback-name">Имя</label>
-              <input id="user-callback-name" type="text" name="user-callback-name" placeholder="Имя" size="12" required>
+              <label class="visually-hidden" for="modal-form-name">Имя</label>
+              <input id="modal-form-name" type="text" name="modal-form-name" placeholder="Имя" size="12" required>
             </div>
             <div class="form__field modal__field">
-              <label class="visually-hidden" for="user-callback-phone">Телефон</label>
-              <input id="user-callback-phone" type="tel" name="user-callback-phone" placeholder="Телефон" pattern="[0-9]{10}" maxlength="10" required>
+              <label class="visually-hidden" for="modal-form-phone">Телефон</label>
+              <input id="modal-form-phone" type="tel" name="modal-form-phone" placeholder="Телефон" required>
             </div>
-            <textarea name="user-callback-question" placeholder="Ваш вопрос" rows="3" aria-label="Поле для вопроса"></textarea>
+            <textarea id="modal-form-questions" name="modal-form-questions" placeholder="Ваш вопрос" rows="3" aria-label="Поле для вопроса"></textarea>
           </div>
           <div class="form__acceptance modal__acceptance">
             <button type="submit">Отправить</button>
@@ -166,14 +166,14 @@
           <p>Мы проконсультируем Вас бесплатно</p>
           <div class="form__inner">
             <div class="form__field">
-              <label class="visually-hidden" for="user-name">Имя</label>
-              <input id="user-name" type="text" name="user-name" placeholder="Имя" size="12" required>
+              <label class="visually-hidden" for="form-name">Имя</label>
+              <input id="form-name" type="text" name="form-name" placeholder="Имя" size="12" required>
             </div>
             <div class="form__field">
-              <label class="visually-hidden" for="user-phone">Телефон</label>
-              <input id="user-phone" type="tel" name="user-phone" placeholder="Телефон" pattern="[0-9]{10}" maxlength="10" required>
+              <label class="visually-hidden" for="form-phone">Телефон</label>
+              <input id="form-phone" type="tel" name="form-phone" placeholder="Телефон" required>
             </div>
-            <textarea name="user-question" placeholder="Ваш вопрос" rows="3" aria-label="Поле для вопроса"></textarea>
+            <textarea id="form-questions" name="form-questions" placeholder="Ваш вопрос" rows="3" aria-label="Поле для вопроса"></textarea>
           </div>
           <div class="form__acceptance">
             <button type="submit">Задать вопрос</button>
@@ -240,6 +240,7 @@
       </ul>
     </div>
   </footer>
+  <script src="https://unpkg.com/imask"></script>
   <script src="js/picturefill.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
