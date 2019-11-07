@@ -36,6 +36,11 @@
   top: 20px;
   right: 20px;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
 }
 
 .modal__inner {
