@@ -1,5 +1,5 @@
 'use strict';
-(function () {
+(function() {
 
   var body = document.querySelector('body');
   var header = body.querySelector('.inner');
@@ -21,7 +21,7 @@
     isStorageSupport = false;
   }
 
-  open.addEventListener('click', function (evt) {
+  open.addEventListener('click', function(evt) {
     if (modal.classList.contains('modal--closed')) {
       evt.preventDefault();
       modal.classList.remove('modal--closed');
@@ -46,7 +46,7 @@
     }
   });
 
-  form.addEventListener('submit', function () {
+  form.addEventListener('submit', function() {
     if (isStorageSupport) {
       localStorage.setItem('Name', formName.value);
       localStorage.setItem('Phone', formPhone.value);
@@ -54,19 +54,19 @@
     }
   });
 
-  close.addEventListener('click', function (evt) {
+  close.addEventListener('click', function(evt) {
     if (!modal.classList.contains('modal--closed')) {
       closeModal(evt);
     }
   });
 
-  overlay.addEventListener('click', function (evt) {
+  overlay.addEventListener('click', function(evt) {
     if (!modal.classList.contains('modal--closed') && evt.target === overlay) {
       closeModal(evt);
     }
   });
 
-  window.addEventListener('keydown', function (evt) {
+  window.addEventListener('keydown', function(evt) {
     if (evt.keyCode === 27 && !modal.classList.contains('modal--closed')) {
       closeModal(evt);
     }
