@@ -70,9 +70,17 @@
     forms.reset();
   };
 
+  var printLocalStorage = function (forms) {
+    Array.from(forms.querySelectorAll('input:not([type=checkbox]), textarea')).
+    forEach(function (element) {
+      console.log(element.value);
+    });
+  };
+
+
+
   if (isStorageSupport) {
     getItemForm();
-    getItemModalForm();
   }
 
   buttonCallback.addEventListener('click', function (evt) {
@@ -81,6 +89,10 @@
       modal.classList.remove('modal--closed');
       body.classList.add('noscroll');
       overlay.style.display = 'block';
+
+      if (isStorageSupport) {
+        getItemModalForm();
+      }
 
       if (modalFormName.value) {
         modalFormPhone.focus();
@@ -98,12 +110,10 @@
         setItemModalForm();
       }
     });
-  });
 
-
-  buttonModalForm.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    clearLocalStorage(modalForm);
+    modalForm.addEventListener('submit', function () {
+      clearLocalStorage(modalForm);
+    });
   });
 
   form.addEventListener('change', function () {
@@ -112,8 +122,7 @@
     }
   });
 
-  buttonForm.addEventListener('submit', function (evt) {
-    evt.preventDefault();
+  form.addEventListener('submit', function () {
     clearLocalStorage(form);
   });
 
