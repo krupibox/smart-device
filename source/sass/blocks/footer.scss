@@ -19,10 +19,12 @@
   margin-top: 6px;
 
   @media (max-width: $tablet-width) {
+    margin-top: 2px;
     margin-left: 2px;
   }
 
   @media (max-width: $mobile-width) {
+    margin-top: 6px;
     width: auto;
     margin-left: auto;
     margin-right: auto;
@@ -36,7 +38,7 @@
 
 .footer__logo {
   @media (max-width: $tablet-width) {
-    margin-right: 16px;
+    margin-right: 11px;
   }
 }
 

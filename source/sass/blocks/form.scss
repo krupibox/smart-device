@@ -6,7 +6,7 @@
 
   @media (max-width: $tablet-width) {
     margin: 0 auto;
-    width: 590px;
+    width: 591px;
   }
 
   @media (max-width: $mobile-width) {
@@ -136,11 +136,13 @@
   letter-spacing: 0.05em;
 
   @media (max-width: $tablet-width) {
-    width: 285px;
+    min-width: 280px;
+    max-width: 280px;
   }
 
   @media (max-width: $mobile-width) {
-    width: 290px;
+    min-width: 290px;
+    max-width: 290px;
   }
 
   &:focus,
