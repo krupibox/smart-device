@@ -143,6 +143,8 @@
   @media (max-width: $mobile-width) {
     min-width: 290px;
     max-width: 290px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   &:focus,
@@ -216,7 +218,7 @@
   content: "";
 
   @media (max-width: $tablet-width) {
-    left: 16px;
+    left: 14px;
   }
 
   @media (max-width: $mobile-width) {
