@@ -1,46 +1,40 @@
 .service {
   margin-top: 100px;
-  background-color: $dark;
   color: $white;
-
+  background-color: $dark;
   @media (max-width: $tablet-width) {
     margin-top: 83px;
+  }
+  @media (max-width: $mobile-width) {
+    margin-top: 65px;
   }
 }
 
 .service__inner {
-  margin: 101px auto 0;
-  padding-top: 58px;
-  padding-bottom: 99px;
   max-width: 1220px;
-  padding-left: 25px;
-  padding-right: 25px;
-
+  margin: 101px auto 0;
+  padding: 58px 25px 99px;
   @media (max-width: $tablet-width) {
     margin: 82px auto 0;
-    padding-top: 20px;
-    padding-right: 25px;
-    padding-left: 25px;
-    padding-bottom: 55px;
+    padding: 20px 25px 31px;
   }
-
   @media (max-width: $mobile-width) {
-    padding: 7px 15px 35px;
+    margin-top: 0;
+    padding: 25px 15px 35px;
   }
 }
 
 .service h2 {
   @include roboto-cond(36px, 400, 51px);
   margin-bottom: 49px;
-
   @media (max-width: $tablet-width) {
-    @include roboto-cond(32px, 400, 51px);
-    margin-bottom: 16px;
+    @include roboto-cond(32px, 400, 48px);
+    margin-bottom: 47px;
     padding-right: 100px;
   }
-
   @media (max-width: $mobile-width) {
     @include roboto-cond(28px, 400, 41px);
+    margin-bottom: 0;
     padding-right: 0;
     padding-left: 10px;
   }
@@ -53,140 +47,84 @@
   padding: 0;
   list-style: none;
   justify-content: flex-start;
-
   @media (max-width: $tablet-width) {
     flex-direction: column;
   }
-
   @media (max-width: $mobile-width) {
-    margin-top: 40px;
+    margin-top: 38px;
   }
 }
 
 .service li {
   position: relative;
-  width: calc((100% - 60px)/3);
-  min-height: 620px;
-  outline: 1px solid red;
+  width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+
+  &:focus,
+  &:hover {
+    outline: 1px solid $light;
+  }
 
   &:nth-child(3n) {
     margin-right: 0;
   }
 
   @media (max-width: $tablet-width) {
-    margin: 23px 0;
+    overflow: hidden;
+    width: 100%;
+    height: 256px;
+    margin-right: 0;
+    margin-bottom: 46px;
   }
 
   @media (max-width: $mobile-width) {
-    margin: 0 0 29px;
+    margin-bottom: 30px;
   }
-}
-
-  // &:first-child a {
-  //   background-image: url("../img/production-desktop@1x.png");
-  //
-  //   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  //     background-image: url("../img/production-desktop@2x.png");
-  //   }
-  //
-  //   @media (max-width: $tablet-width) {
-  //     background-image: url("../img/production-tablet@1x.png");
-  //   }
-  //
-  //   @media (max-width: $tablet-width) and (min-resolution: $retina-dpi), (max-width: $tablet-width) and (min-resolution: $retina-dppx) {
-  //     background-image: url("../img/production-tablet@2x.png");
-  //   }
-  //
-  //   @media (max-width: $mobile-width) {
-  //     background-image: url("../img/production-mobile@1x.png");
-  //   }
-  //
-  //   @media (max-width: $mobile-width) and (min-resolution: $retina-dpi), (max-width: $mobile-width) and (min-resolution: $retina-dppx) {
-  //     background-image: url("../img/production-mobile@2x.png");
-  //   }
-  // }
-
-  // &:nth-child(2) a {
-  //   background-image: url("../img/assembling-desktop@1x.png");
-  //
-  //   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  //     background-image: url("../img/assembling-desktop@2x.png");
-  //   }
-  //
-  //   @media (max-width: $tablet-width) {
-  //     background-image: url("../img/assembling-tablet@1x.png");
-  //   }
-  //
-  //   @media (max-width: $tablet-width) and (min-resolution: $retina-dpi), (max-width: $tablet-width) and (min-resolution: $retina-dppx) {
-  //     background-image: url("../img/assembling-tablet@2x.png");
-  //   }
-  //
-  //   @media (max-width: $mobile-width) {
-  //     background-image: url("../img/assembling-mobile@1x.png");
-  //   }
-  //
-  //   @media (max-width: $mobile-width) and (min-resolution: $retina-dpi), (max-width: $mobile-width) and (min-resolution: $retina-dppx) {
-  //     background-image: url("../img/assembling-mobile@2x.png");
-  //   }
-  // }
-
-  // &:last-child a {
-  //   background-image: url("../img/components-desktop@1x.png");
-  //
-  //   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  //     background-image: url("../img/components-desktop@2x.png");
-  //   }
-  //
-  //   @media (max-width: $tablet-width) {
-  //     background-image: url("../img/components-tablet@1x.png");
-  //   }
-  //
-  //   @media (max-width: $tablet-width) and (min-resolution: $retina-dpi), (max-width: $tablet-width) and (min-resolution: $retina-dppx) {
-  //     background-image: url("../img/components-tablet@2x.png");
-  //   }
-  //
-  //   @media (max-width: $mobile-width) {
-  //     background-image: url("../img/components-mobile@1x.png");
-  //   }
-  //
-  //   @media (max-width: $mobile-width) and (min-resolution: $retina-dpi), (max-width: $mobile-width) and (min-resolution: $retina-dppx) {
-  //     background-image: url("../img/components-mobile@2x.png");
-  //   }
-  // }
-
-
-.service li a::after {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 63px;
-  height: 63px;
-  background: url("../img/arrow.svg");
-  background-color: $light;
-  background-position: center;
-  background-repeat: no-repeat;
-  content: "";
-}
-
-.service li > a,
-.service li > a:link,
-.service li > a:visited {
-  color: $white;
-}
-
-.service li > a:focus,
-.service li > a:hover {
-  opacity: 0.5;
-}
-
-.service img {
-  width: 100%;
 }
 
 .service h3 {
   position: absolute;
-  @include roboto-cond(20px, 400, 30px);
+  top: 32px;
+  left: 44px;
+  width: 170px;
   color: $white;
+
+  @include roboto-cond(20px, 400, 30px);
+
+  @media (max-width: $tablet-width) {
+    top: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    top: 0;
+    left: 35px;
+  }
+}
+
+.service li a {
+  width: 100%;
+  color: $white;
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 63px;
+    height: 63px;
+    content: "";
+    background: url("../img/arrow.svg");
+    background-color: $light;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:link,
+  &:visited {
+    color: $white;
+  }
+}
+
+.service img {
+  width: 100%;
 }
