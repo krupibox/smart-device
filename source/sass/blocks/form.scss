@@ -145,6 +145,7 @@
     max-width: 290px;
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 20px;
   }
 
   &:focus,
@@ -183,12 +184,17 @@
   padding-left: 56px;
   width: 287px;
 
+  &:focus,
+  &:hover {
+    opacity: 0.5;
+  }
+
   @media (max-width: $tablet-width) {
     padding-left: 49px;
   }
 
   @media (max-width: $mobile-width) {
-    padding-top: 32px;
+    // padding-top: 32px;
     padding-left: 34px;
   }
 }
@@ -224,7 +230,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    top: 32px;
+    top: 12px;
     left: -1px;
   }
 }
