@@ -128,7 +128,7 @@
           <!-- 1х: 131px; 2x: 261px -->
           <source srcset="./img/2005-tablet@1x.png 1x, ./img/2005-tablet@2x.png 2x" media="(max-width: 1023px)">
           <!-- 1х: 115px; 2x: 229px -->
-          <img src="./img/2005-desktop@2x.png" srcset="./img/2005-desktop@2x.png 2x" width="115" height="305" alt="2005">
+          <img src="./img/2005-desktop@1x.png" srcset="./img/2005-desktop@2x.png 2x" width="115" height="305" alt="2005">
         </picture>
       </div>
       <div>
@@ -146,9 +146,18 @@
       <div class="service__inner">
         <h2>Service Device предлагает следующие товары и услуги</h2>
         <ul>
-          <li><a href="#">Производство печатных плат</a></li>
-          <li><a href="#">Монтаж печатных плат</a></li>
-          <li><a href="#">Комплектующие для светотехники</a></li>
+          <li><a href="#"><h3>Производство печатных плат</h3>
+            <picture>
+              <!-- 1х: 115px; 2x: 229px -->
+              <source media="(max-width: 767px)" srcset="./img/production-mobile@1x.png, ./img/production-mobile@2x.png 2x">
+              <!-- 1х: 115px; 2x: 229px -->
+              <source media="(max-width: 1023px)" srcset="./img/production-tablet@1x.png, ./img/production-tablet@2x.png 2x">
+              <!-- 1х: 115px; 2x: 229px -->
+              <img src="./img/production-desktop@1x.png" srcset="./img/production-desktop@2x.png 2x" width="370" height="620" alt="Печатные платы">
+            </picture>
+          </a></li>
+          <li><a href="#"><h3>Монтаж печатных плат</h3></a></li>
+          <li><a href="#"><h3>Комплектующие для светотехники</h3></a></li>
         </ul>
       </div>
     </section>
@@ -209,7 +218,7 @@
               <span class="visually-hidden">Наш Вконтакте</span></a></li>
         </ul>
       </div>
-      <div class="footer__block footer__block--menu" role="navigation" aria-label="Дополнительное меню">
+      <nav class="footer__block footer__block--menu">
         <h3 class="footer__header footer__header--close">Разделы сайта</h3>
         <ul class="footer__list footer__list--menu footer__list--close">
           <li><a href="#">О компании</a></li>
@@ -220,7 +229,7 @@
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-      </div>
+      </nav>
       <div class="footer__block footer__block--office">
         <h3 class="footer__header footer__header--open">Наш офис</h3>
         <ul class="footer__list footer__list--office">
