@@ -94,6 +94,11 @@
   cursor: pointer;
 }
 
+.modal__acceptance input[type="checkbox"] {
+  bottom: 58px;
+  left: 49px;
+}
+
 .modal__acceptance label::before {
   left: 0;
 }

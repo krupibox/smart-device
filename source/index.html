@@ -64,13 +64,13 @@
             </div>
             <div class="form__field modal__field">
               <label class="visually-hidden" for="modal-form-phone">Телефон</label>
-              <input id="modal-form-phone" type="tel" name="modal-form-phone" placeholder="Телефон" required>
+              <input id="modal-form-phone" type="tel" name="modal-form-phone" placeholder="Телефон" pattern="^\+\d{1}\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}" required>
             </div>
             <textarea id="modal-form-questions" name="modal-form-questions" placeholder="Ваш вопрос" rows="3" aria-label="Поле для вопроса"></textarea>
           </div>
           <div class="form__acceptance modal__acceptance">
             <button type="submit">Отправить</button>
-            <input id="modal-acceptance" type="checkbox" name="modal-acceptance" value="1" aria-invalid="false" required>
+            <input id="modal-acceptance" type="checkbox" name="modal-acceptance" value="1" aria-invalid="false" checked required>
             <label for="modal-acceptance">Я согласен на обработку персональных данных</label>
           </div>
         </form>
@@ -171,13 +171,13 @@
             </div>
             <div class="form__field">
               <label class="visually-hidden" for="form-phone">Телефон</label>
-              <input id="form-phone" type="tel" name="form-phone" placeholder="Телефон" required>
+              <input id="form-phone" type="tel" name="form-phone" placeholder="Телефон" pattern="^\+\d{1}\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}" required>
             </div>
             <textarea id="form-questions" name="form-questions" placeholder="Ваш вопрос" rows="3" aria-label="Поле для вопроса"></textarea>
           </div>
           <div class="form__acceptance">
             <button type="submit">Задать вопрос</button>
-            <input id="form-acceptance" type="checkbox" name="form-acceptance" value="1" aria-invalid="false" checked>
+            <input id="form-acceptance" type="checkbox" name="form-acceptance" value="1" aria-invalid="false" checked required>
             <label for="form-acceptance">Я согласен на обработку персональных данных</label>
           </div>
         </form>

@@ -16,6 +16,8 @@
   var formName = form.querySelector('#form-name');
   var formPhone = form.querySelector('#form-phone');
   var formQuestions = form.querySelector('#form-questions');
+  var modalCheckbox = modalForm.querySelector('input[name=modal-acceptance]');
+  var formCheckbox = form.querySelector('input[name=form-acceptance]');
 
   var maskOptions = {
     mask: '+{7} (000) 000-00-00'
@@ -23,13 +25,13 @@
 
   /* eslint-disable */
 
-  var maskModalFromName = IMask(modalFormPhone, maskOptions);
-  var maskFormName = IMask(formPhone, maskOptions);
+  var maskModalFormPhone = IMask(modalFormPhone, maskOptions);
+  var maskFormPhone = IMask(formPhone, maskOptions);
 
   /* eslint-enable */
 
-  maskModalFromName.updateValue();
-  maskFormName.updateValue();
+  maskModalFormPhone.updateValue();
+  maskFormPhone.updateValue();
 
   var isStorageSupport = true;
 
@@ -66,9 +68,9 @@
 
   var clearLocalStorage = function (forms) {
     Array.from(forms.querySelectorAll('input:not([type=checkbox]), textarea')).
-        forEach(function (element) {
-          element.value = '';
-        });
+    forEach(function (element) {
+      element.value = '';
+    });
     window.localStorage.clear();
     forms.reset();
   };
@@ -105,28 +107,25 @@
       }
     });
 
-    var input = modalForm.querySelector('input[name=modal-acceptance]');
-    input.setCustomValidity('Согласитесь на обработку персональных данных');
+    modalFormPhone.addEventListener('change', function () {
+      if (modalFormPhone.validity.patternMismatch) {
+        modalFormPhone.setCustomValidity('Введите в формате +7 (ХХХ) ХХХ-ХХ-ХХ');
+      } else {
+        modalFormPhone.setCustomValidity('');
+      }
+    });
 
-    input.addEventListener('change', function () {
-      if (!input.validity.valueMissing) {
-        input.setCustomValidity('');
+    modalCheckbox.addEventListener('change', function () {
+      if (modalCheckbox.validity.valueMissing) {
+        modalCheckbox.setCustomValidity('Согласитесь на обработку персональных данных');
+      } else {
+        modalCheckbox.setCustomValidity('');
       }
     });
 
     modalForm.addEventListener('submit', function () {
       clearLocalStorage(modalForm);
     });
-  });
-
-  form.addEventListener('change', function () {
-    if (isStorageSupport) {
-      setItemForm();
-    }
-  });
-
-  form.addEventListener('submit', function () {
-    clearLocalStorage(form);
   });
 
   close.addEventListener('click', function (evt) {
@@ -153,4 +152,33 @@
     modal.classList.add('modal--closed');
     overlay.style.display = 'none';
   }
+
+
+  form.addEventListener('change', function () {
+    if (isStorageSupport) {
+      setItemForm();
+    }
+  });
+
+  formPhone.addEventListener('change', function () {
+
+    if (formPhone.validity.patternMismatch) {
+      formPhone.setCustomValidity('Введите в формате +7 (ХХХ) ХХХ-ХХ-ХХ');
+    } else {
+      formPhone.setCustomValidity('');
+    }
+  });
+
+  formCheckbox.addEventListener('change', function () {
+    if (formCheckbox.validity.valueMissing) {
+      formCheckbox.setCustomValidity('Согласитесь на обработку персональных данных');
+    } else {
+      formCheckbox.setCustomValidity('');
+    }
+  });
+
+  form.addEventListener('submit', function () {
+    clearLocalStorage(form);
+  });
+
 })();
