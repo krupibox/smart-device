@@ -1,4 +1,5 @@
 'use strict';
+
 (function () {
 
   var body = document.querySelector('body');
@@ -77,8 +78,8 @@
   }
 
   buttonCallback.addEventListener('click', function (evt) {
+    evt.preventDefault();
     if (modal.classList.contains('modal--closed')) {
-      evt.preventDefault();
       modal.classList.remove('modal--closed');
       body.classList.add('noscroll');
       overlay.style.display = 'block';
@@ -101,6 +102,15 @@
     modalForm.addEventListener('change', function () {
       if (isStorageSupport) {
         setItemModalForm();
+      }
+    });
+
+    var input = modalForm.querySelector('input[name=modal-acceptance]');
+    input.setCustomValidity('Согласитесь на обработку персональных данных');
+
+    input.addEventListener('change', function () {
+      if (!input.validity.valueMissing) {
+        input.setCustomValidity('');
       }
     });
 
