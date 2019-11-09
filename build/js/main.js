@@ -3,12 +3,12 @@
 (function () {
 
   var body = document.querySelector('body');
-  var header = body.querySelector('.inner');
-  var overlay = header.querySelector('.overlay');
-  var modal = header.querySelector('.modal');
-  var buttonCallback = header.querySelector('.button');
+  var inner = body.querySelector('.inner');
+  var overlay = inner.querySelector('.overlay');
+  var modal = inner.querySelector('.modal');
+  var buttonCallback = inner.querySelector('.button');
   var close = modal.querySelector('img');
-  var modalForm = header.querySelector('.modal__form');
+  var modalForm = inner.querySelector('.modal__form');
   var form = body.querySelector('.form:not(.modal__form)');
   var modalFormName = modalForm.querySelector('#modal-form-name');
   var modalFormPhone = modalForm.querySelector('#modal-form-phone');
@@ -18,6 +18,24 @@
   var formQuestions = form.querySelector('#form-questions');
   var modalCheckbox = modalForm.querySelector('input[name=modal-acceptance]');
   var formCheckbox = form.querySelector('input[name=form-acceptance]');
+
+  var linkScroll = inner.querySelector('.scroll-down');
+  var advantages = body.querySelector('#advantages');
+
+  var scrollDown = function (link, anchor) {
+    if (link && anchor) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        anchor.scrollIntoView({
+          block: 'start',
+          behavior: 'smooth'
+        });
+      });
+    }
+  };
+
+  scrollDown(linkScroll, advantages);
 
   var maskOptions = {
     mask: '+{7} (000) 000-00-00'
