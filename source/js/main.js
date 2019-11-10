@@ -19,23 +19,52 @@
   var modalCheckbox = modalForm.querySelector('input[name=modal-acceptance]');
   var formCheckbox = form.querySelector('input[name=form-acceptance]');
 
-  var linkScroll = inner.querySelector('.scroll-down');
-  var advantages = body.querySelector('#advantages');
+  var scrollAdvantages = inner.querySelector('.scroll-down');
+  var scrollQuestions = inner.querySelector('.company__button');
 
-  var scrollDown = function (link, anchor) {
-    if (link && anchor) {
-      link.addEventListener('click', function (e) {
-        e.preventDefault();
+  function doScrolling(element, duration) {
 
-        anchor.scrollIntoView({
-          block: 'start',
-          behavior: 'smooth'
-        });
-      });
+    var startingY = window.pageYOffset;
+    var elementY = window.pageYOffset + document.querySelector(element).getBoundingClientRect().top;
+
+    var targetY = document.body.scrollHeight - elementY < window.innerHeight ? document.body.scrollHeight - window.innerHeight : elementY;
+    var diff = targetY - startingY;
+    var start;
+
+    if (!diff) {
+      return;
     }
-  };
 
-  scrollDown(linkScroll, advantages);
+    window.requestAnimationFrame(function step(timestamp) {
+      if (!start) {
+        start = timestamp;
+      }
+
+      var time = timestamp - start;
+      var percent = Math.min(time / duration, 1);
+
+      window.scrollTo(0, startingY + diff * percent);
+      if (time < duration) {
+        window.requestAnimationFrame(step);
+      }
+    });
+  }
+
+  if (scrollAdvantages) {
+    scrollAdvantages.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      doScrolling('#advantages', 500);
+    });
+  }
+
+  if (scrollQuestions) {
+    scrollQuestions.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      doScrolling('#questions', 500);
+    });
+  }
 
   var maskOptions = {
     mask: '+{7} (000) 000-00-00'

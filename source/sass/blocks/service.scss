@@ -2,9 +2,11 @@
   margin-top: 100px;
   color: $white;
   background-color: $dark;
+
   @media (max-width: $tablet-width) {
     margin-top: 83px;
   }
+
   @media (max-width: $mobile-width) {
     margin-top: 65px;
   }
@@ -14,10 +16,12 @@
   max-width: 1220px;
   margin: 101px auto 0;
   padding: 58px 25px 99px;
+
   @media (max-width: $tablet-width) {
     margin: 82px auto 0;
     padding: 20px 25px 31px;
   }
+
   @media (max-width: $mobile-width) {
     margin-top: 0;
     padding: 25px 15px 35px;
@@ -27,11 +31,13 @@
 .service h2 {
   @include roboto-cond(36px, 400, 51px);
   margin-bottom: 49px;
+
   @media (max-width: $tablet-width) {
     @include roboto-cond(32px, 400, 48px);
     margin-bottom: 47px;
     padding-right: 100px;
   }
+
   @media (max-width: $mobile-width) {
     @include roboto-cond(28px, 400, 41px);
     margin-bottom: 0;
@@ -47,9 +53,11 @@
   padding: 0;
   list-style: none;
   justify-content: flex-start;
+
   @media (max-width: $tablet-width) {
     flex-direction: column;
   }
+
   @media (max-width: $mobile-width) {
     margin-top: 38px;
   }
