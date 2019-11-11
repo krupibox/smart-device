@@ -252,17 +252,42 @@
   }
 }
 
-.footer__list--menu:target {
+.footer__block--menu:target .footer__list--menu {
   @media (max-width: $mobile-width) {
     max-height: 176px;
     margin-bottom: 26px;
   }
 }
 
-.footer__list--office:target {
+.footer__block--menu:target + .footer__block--office .footer__header--open::after {
+  @media (max-width: $mobile-width) {
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/plus.svg");
+  }
+}
+
+.footer__block--office:target .footer__list--office {
   @media (max-width: $mobile-width) {
     max-height: 176px;
     margin-bottom: 26px;
+  }
+}
+
+.footer__block--menu:target .footer__header--close::after {
+  @media (max-width: $mobile-width) {
+    top: 19px;
+    width: 16px;
+    height: 2px;
+    background-image: url("../img/minus.svg");
+  }
+}
+
+.footer__block--menu:target .footer__header--close + .footer__header--open::after {
+  @media (max-width: $mobile-width) {
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/plus.svg");
   }
 }
 
